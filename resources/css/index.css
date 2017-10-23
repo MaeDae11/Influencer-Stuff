@@ -1,6 +1,28 @@
+/*  *************************
+FONT FAMILIES FROM GOOGLE FONTS
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Bowlby One SC', cursive;
+font-family: 'Rammetto One', cursive; */
+
 html, body{
   margin: 0;
   height: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 .banner-container {
   background-image: url("../images/backgroundstereografitti.jpg");
@@ -16,10 +38,11 @@ html, body{
 .clients-work-with-container,
 .personal-instagram-container {
   min-height: 600px;
-  background-color: #363131;
+  background-color: #303030;
   border-bottom: 2px solid black;
 }
 .footer-container {
-  height: 80px;
-  background-color: #A9A9A9
+  height: 100px;
+  background-color: #222222;
+  color: lightgrey;
 }
