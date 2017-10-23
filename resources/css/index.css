@@ -1,0 +1,25 @@
+html, body{
+  margin: 0;
+  height: 100%;
+}
+.banner-container {
+  background-image: url("../images/backgroundstereografitti.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  height: 100%;
+}
+
+.services-container,
+.featured-video-container,
+.clients-work-with-container,
+.personal-instagram-container {
+  min-height: 600px;
+  background-color: #363131;
+  border-bottom: 2px solid black;
+}
+.footer-container {
+  height: 80px;
+  background-color: #A9A9A9
+}

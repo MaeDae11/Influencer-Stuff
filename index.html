@@ -5,27 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Influencer Stuff</title>
+  <link rel="stylesheet" href="resources/css/index.css">
 </head>
+
 <body>
 
-  <nav>
-
-  </nav>
   <!-- header section with background image -->
-  <header>
-
+  <header class="banner-container">
+      <!-- Navigation bar  - sticks to top -->
+      <nav class="navigation-container">
+        <div class="logo">
+          <span>INFLUENCER STUFF</span>
+        </div>
+        <div class="navigation-buttons">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Service</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
   </header>
 
   <main>
     <!-- about me container -->
     <div class="about-me-container">
+      <div class="information">
 
+      </div>
+      <div class="about-me-image">
 
+      </div>
     </div>
 
     <!-- section containing 3 general services offered -->
     <div class="services-container">
 
+      <div class="service-one">
+        <div class="service-one-icon">
+
+        </div>
+        <div class="service-one-summary">
+
+        </div>
+      </div>
+
+      <div class="service-two">
+        <div class="service-two-icon">
+
+        </div>
+        <div class="service-two-summary">
+
+        </div>
+      </div>
+
+      <div class="service-three">
+        <div class="service-three-icon">
+
+        </div>
+        <div class="service-three-summary">
+          
+        </div>
+      </div>
 
     </div>
 
@@ -40,6 +81,7 @@
 
     </div>
 
+    <!-- imports last 10 posts from instagram using API call in JS file -->
     <div class="personal-instagram-container">
 
 
@@ -50,15 +92,28 @@
 
   <!-- footer section at bottom containing social media icons and copyright information -->
   <footer>
-    <div class="social-media-icons">
-
-    </div>
-    <div class="influencer-stuff-copyright">
-      <span>copy&; INFLUENCER STUFF 2017</span>
-      <span>Build by MaeDae Designer Inc.</span>
+    <div class="footer-container">
+      <div class="social-media-icons">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+      <div class="influencer-stuff-copyright">
+        <span>copy&: INFLUENCER STUFF 2017</span>
+        <span>Build by MaeDae Designer Inc.</span>
+      </div>
     </div>
 
   </footer>
 
+  <!-- jQuery minified version-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- jQuery smooth scroll minified version -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
+  <!-- Influencer Stuff JS file -->
+  <script src="resources/scripts/main.js"></script>
+  <!-- font awesome minified -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 </body>
 </html>
