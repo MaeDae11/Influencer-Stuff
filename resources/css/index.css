@@ -233,7 +233,7 @@ html, body{
   align-items: center;
 }
 .contact-title {
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: .2em;
   color: #00A2AA;
@@ -245,14 +245,40 @@ html, body{
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  color: #00A2AA;
 }
 .name-email-section {
   display: flex;
 }
 .contact-name input,
 .contact-email input {
-  
+  height: 40px;
+  width: 300px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 2px solid #00A2AA;
 }
+textarea#message {
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 4px;
+  height: 200px;
+  border: 2px solid #00A2AA;
+}
+.contact-send-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contact-send-button button {
+  padding: 12px 23px;
+  border-radius: 30px;
+  font-size: 13px;
+  background-color: white;
+  border: 2px solid #00A2AA;
+}
+
 
 /* ************  FOOTER SECTION  **************** */
 .footer-container {
