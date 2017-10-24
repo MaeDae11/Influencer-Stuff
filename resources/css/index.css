@@ -29,7 +29,7 @@ html, body{
   color: white;
 }
 .logo {
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Rammetto One', cursive; 
 }
 /* navigation buttons are styled with social icons in footer as overlaped */
 .navigation-buttons a:hover {
@@ -49,7 +49,7 @@ html, body{
 .influencer-title {
   text-align: center;
   font-size: 40px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Rammetto One', cursive; 
   letter-spacing: .2em;
   color: white;
   width: 100%;
@@ -79,7 +79,7 @@ html, body{
 .clients-title,
 .instagram-title {
   font-size: 24px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Rammetto One', cursive; 
   letter-spacing: .2em;
   color: #00A2AA;
 }
@@ -121,7 +121,7 @@ html, body{
 }
 .services-title {
   font-size: 24px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Rammetto One', cursive; 
   letter-spacing: .2em;
   color: #00A2AA;
 }
@@ -234,7 +234,7 @@ html, body{
 }
 .contact-title {
   font-size: 28px;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Rammetto One', cursive; 
   letter-spacing: .2em;
   color: #00A2AA;
 }
