@@ -64,7 +64,7 @@ html, body{
 .clients-overall-container,
 .personal-instagram-container {
   min-height: 600px;
-  background-color: #303030;
+  background-color: #353239;
   border-bottom: 2px solid black;
   display: flex;
 }
@@ -151,7 +151,7 @@ html, body{
 .featured-video-container .filter {
   z-index: 20;
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(53, 50, 57, 0.7);
   width: 100%;
   height: 100%;
 }
@@ -167,7 +167,9 @@ html, body{
 }
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
-  justify-content: space-around;
+  background-image: url("../images/backgroundgrafittihallway.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
   flex-direction: column;
   text-align: center;
 }
@@ -185,7 +187,7 @@ html, body{
   align-content: center;
 }
 .client img {
-  opacity: .6;
+  opacity: .8;
   height: 300px;
   transition: all .75s ease-in-out;
   -webkit-transition: all .75s ease;
@@ -266,6 +268,11 @@ html, body{
   .clients-overall-container,
   .personal-instagram-container {
     min-height: 800px;
+  }
+  .about-me-title,
+  .clients-title,
+  .instagram-title {
+    font-size: 32px;
   }
   /* *************  SERVICES ****************** */
   .service {
