@@ -12,7 +12,9 @@ html, body{
   height: 100%;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  letter-spacing: .1em;
 }
+/* *************** NAVIGATION AND FOCAL MAIN IMAGE ********************* */
 .navigation-container {
   display: flex;
   justify-content: space-between;
@@ -33,7 +35,6 @@ html, body{
   color: white;
   text-decoration: none;
 }
-
 .banner-container {
   background-image: url("../images/backgroundstereografitti.jpg");
   background-position: center center;
@@ -43,6 +44,10 @@ html, body{
   height: 100%;
 }
 
+
+
+/* ********************** BODY OF WEBSITE *********************** */
+.about-me-container,
 .services-container,
 .featured-video-container,
 .clients-work-with-container,
@@ -50,11 +55,33 @@ html, body{
   min-height: 600px;
   background-color: #303030;
   border-bottom: 2px solid black;
+  display: flex;
 }
 
+/* *************** ABOUT ME  ****************** */
 
+.about-me-container {
+  justify-content: space-around;
+  align-items: center;
+}
+.about-me-title {
+  font-size: 24px;
+  font-family: 'Bowlby One SC', cursive;
+  color: purple;
+}
+.about-me-information {
+  width: 40%;
+  color: white;
+  font-size: 20px;
+}
 
-
+.about-me-image {
+  width: 40%;
+  text-align: center;
+}
+.about-me-image img{
+  width: 60%;
+}
 /* ************  FOOTER SECTION  **************** */
 
 .footer-container {
@@ -91,12 +118,10 @@ html, body{
   .logo {
     padding-left: 40px;
     font-size: 22px;
-    letter-spacing: .1em;
   }
   .navigation-buttons a {
     padding-right: 40px;
     font-size: 18px;
-    letter-spacing: .1em;
   }
 
   /* ************  FOOTER SECTION  **************** */
