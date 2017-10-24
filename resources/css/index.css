@@ -31,7 +31,10 @@ html, body{
 .logo {
   font-family: 'Bowlby One SC', cursive;
 }
-/* navigation buttons are linked with social icons in footer as overlaped a lot in styling*/
+/* navigation buttons are styled with social icons in footer as overlaped */
+.navigation-buttons a:hover {
+  color: #00A2AA;
+}
 .banner-container {
   background-image: url("../images/backgroundstereografitti.jpg");
   background-position: center center;
@@ -84,6 +87,7 @@ html, body{
 
 
 /* ***************  SERVICES   ****************** */
+/* overall container with all 3 services */
 .services-container {
   background-image: url("../images/backgroundblackexposedbrick.jpg");
   background-position: center center;
@@ -92,9 +96,7 @@ html, body{
   justify-content: space-around;
   align-items: center;
 }
-.service-icons {
-  color: white;
-}
+/* individual container */
 .service {
   width: 20%;
   display: flex;
@@ -104,6 +106,16 @@ html, body{
   font-size: 20px;
   color: white;
 }
+.services-title {
+  font-size: 24px;
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: .2em;
+  color: #00A2AA;
+}
+.service-icons {
+  color: white;
+}
+
 /* ************  FOOTER SECTION  **************** */
 
 .footer-container {
@@ -127,8 +139,7 @@ html, body{
   -o-transition: color .5s ease;
   transition: color .5s ease;
 }
-.social-media-icons a:hover,
-.navigation-buttons a:hover {
+.social-media-icons a:hover{
   color: #00A2AA;
 }
 
