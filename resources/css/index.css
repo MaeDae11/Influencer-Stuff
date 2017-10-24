@@ -42,8 +42,20 @@ html, body{
   background-attachment: fixed;
   background-size:  cover;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.influencer-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: .2em;
+  color: white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+}
 
 
 /* ********************** BODY OF WEBSITE *********************** */
@@ -155,7 +167,25 @@ html, body{
 }
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+.client {
+  height: 300px;
+  width: 300px;
+  overflow: none;
+}
+.client img {
+  height: 300px;
+}
+.client img:hover {
+  
 }
 
 /* ************    INSTAGRAM   ******************* */
