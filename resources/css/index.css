@@ -64,7 +64,8 @@ html, body{
   align-items: center;
 }
 .about-me-title,
-.clients-title {
+.clients-title,
+.instagram-title {
   font-size: 24px;
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: .2em;
@@ -157,6 +158,25 @@ html, body{
   justify-content: center;
 }
 
+/* ************    INSTAGRAM   ******************* */
+.personal-instagram-container {
+  text-align: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: scroll;
+}
+.instagram-title {
+  padding-bottom: 50px;
+}
+.instagram-imports {
+  display: flex;
+  overflow: scroll;
+}
+.testing-instagram img {
+  margin-left: 30px;
+  height: 400px;
+}
 
 /* ************  FOOTER SECTION  **************** */
 
@@ -216,7 +236,7 @@ html, body{
   .clients-title {
     padding-top: 40px;
   }
-  
+
   /* ************  FOOTER SECTION  **************** */
   .footer-container {
     height: 200px;
