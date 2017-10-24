@@ -102,21 +102,45 @@
     </div>
 
     <!-- imports last 10 posts from instagram using API call in JS file -->
-    <div class="personal-instagram-container">
-        <h3 class="instagram-title">INSTAGRAM</h3>
+    <section class="personal-instagram-container">
+      <h3 class="instagram-title">INSTAGRAM</h3>
 
-        <div class="instagram-imports">
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-            <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
-        </div>
-    </div>
+      <div class="instagram-imports">
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+          <div class="testing-instagram"><img src="resources/images/instagramtest.jpg" alt="instragram testing data" /></div>
+      </div>
+    </section>
+
+    <!-- Email Us Section -->
+    <section id="get-in-touch" class="contact-overall-section">
+      <div class="contact-container">
+        <h2 class="contact-title">Get in touch</h2>
+        <form method="post" id="myform">
+          <div class="name-email-section">
+            <div class="contact-name">
+                <label for="name">Name</label>
+                <input type="text" name="from_name" id="name" value="" maxlength="50"/>
+            </div>
+            <div class="contact-email">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="" maxlength="50" required/>
+            </div>
+          </div>
+          <div class="contact-message">
+              <label for="message">Message</label>
+              <textarea name="message_html" id="message" rows="6" maxlength="200" placeholder="Please write a brief message. I'm excited to hear from you!" ></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+    </section>
 
   </main>
 

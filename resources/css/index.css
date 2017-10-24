@@ -128,8 +128,8 @@ html, body{
 .service-icons {
   color: white;
 }
-/***************** VIDEO SECTION **************** */
 
+/***************** VIDEO SECTION **************** */
 .no-video .featured-video-container video,
 .touch .featured-video-container video {
   display: none;
@@ -165,6 +165,7 @@ html, body{
 .featured-video-container video.fillWidth {
   width: 100%;
 }
+
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
   background-image: url("../images/backgroundgrafittihallway.jpg");
@@ -201,7 +202,7 @@ html, body{
   transition: all .75s ease-in-out;
 }
 
-/* ************    INSTAGRAM   ******************* */
+/* ************    INSTAGRAM SECTION  ******************* */
 .personal-instagram-container {
   text-align: center;
   align-content: center;
@@ -221,8 +222,39 @@ html, body{
   height: 400px;
 }
 
-/* ************  FOOTER SECTION  **************** */
+/* ************  CONTACT SECTION ********************* */
+.contact-container {
+  min-height: 800px;
+  background-color: #353239;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-title {
+  font-size: 24px;
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: .2em;
+  color: #00A2AA;
+}
+.contact-name,
+.contact-email,
+.contact-message {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.name-email-section {
+  display: flex;
+}
+.contact-name input,
+.contact-email input {
+  
+}
 
+/* ************  FOOTER SECTION  **************** */
 .footer-container {
   height: 150px;
   background-color: #222222;
