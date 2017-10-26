@@ -420,14 +420,18 @@ textarea#message {
 /************************************************ */
 /* ************  FOOTER SECTION  **************** */
 .footer-container {
-  height: 150px;
+  height: 175px;
   background-color: #222222;
   color: white;
+  letter-spacing: .20em;
+  font-size: 12px;
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  letter-spacing: .20em;
 }
 
 .social-media-icons a,
@@ -443,16 +447,20 @@ textarea#message {
 .social-media-icons a:hover{
   color: #00A2AA;
 }
-
-@media screen and (min-width: 1200px) {
-  /* ********  FOOTER ********* */
+.social-media-icons {
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 650px) {
   .footer-container {
-    height: 200px;
+    font-size: 14px;
   }
-  .social-media-icons a {
-    padding: 20px;
+}
+@media screen and (min-width: 984px) {
+  .footer-container {
+    height: 250px;
+    font-size: 16px;
   }
-  .social-media-icons {
-    padding-bottom: 20px;
-  }
+}
+@media screen and (min-width: 1200px) {
+
 }
