@@ -115,7 +115,7 @@ html, body{
 .about-me-information {
   width: 90%;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 .about-me-image {
   width: 90%;
@@ -137,7 +137,7 @@ html, body{
     flex-direction: row;
   }
   .about-me-information {
-    width: 40%;
+    width: 45%;
     color: white;
     font-size: 20px;
   }
@@ -154,10 +154,10 @@ html, body{
   /* *******  ABOUT ME  ********* */
   .about-me-information {
     width: 40%;
+    font-size: 22px;
   }
   .about-me-image {
     width: 40%;
-    text-align: center;
   }
   .about-me-image img{
     width: 80%;
