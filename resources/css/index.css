@@ -160,7 +160,6 @@ html, body{
   z-index: 0;
   top: 0;
   width: 100%;
-  
 }
 .featured-video-container video.fillWidth {
   width: 100%;
@@ -168,7 +167,7 @@ html, body{
 
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
-  background-image: url("../images/backgroundgrafittihallway.jpg");
+  background-image: url("../images/backgroundbrick.JPG");
   background-repeat:  no-repeat;
   background-size:  cover;
   flex-direction: column;
@@ -243,7 +242,6 @@ html, body{
 .contact-message {
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding: 20px;
   color: #00A2AA;
 }
