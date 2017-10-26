@@ -14,6 +14,7 @@ html, body{
   font-weight: 300;
   letter-spacing: .1em;
 }
+/************************************************ */
 /* *************** NAVIGATION AND FOCAL MAIN IMAGE ********************* */
 .navigation-container {
   display: flex;
@@ -56,9 +57,33 @@ html, body{
   background-color: rgba(0, 0, 0, 0.8);
   padding: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .navigation-container {
+    height: 70px;
+  }
+  .logo {
+    padding-left: 40px;
+    font-size: 22px;
+  }
+  .navigation-buttons a {
+    padding-right: 40px;
+    font-size: 18px;
+  }
+  .about-me-container,
+  .services-container,
+  .clients-overall-container,
+  .personal-instagram-container {
+    min-height: 800px;
+  }
+  .about-me-title,
+  .clients-title,
+  .instagram-title {
+    font-size: 32px;
+  }
+}
 
-
-/* ********************** BODY OF WEBSITE *********************** */
+/************************************************ */
+/* ********************** BODY OF WEBSITE ********************/
 .about-me-container,
 .services-container,
 .clients-overall-container,
@@ -69,7 +94,9 @@ html, body{
   display: flex;
 }
 
-/* ***************  ABOUT ME SECTION  ****************** */
+
+/************************************************ */
+/* ***************  ABOUT ME SECTION  *********** */
 .about-me-container {
   justify-content: space-around;
   align-items: center;
@@ -142,8 +169,9 @@ html, body{
     width: 65%;
   }
 }
-    
 
+
+/************************************************ */
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
 .services-container {
@@ -183,9 +211,7 @@ html, body{
 .service-icons {
   color: white;
 }
-@media screen and (min-width: 650px) {
 
-}
 @media screen and (min-width: 650px) {
   .service {
     width: 80%;
@@ -221,6 +247,10 @@ html, body{
     font-size: 24px;
   }
 }
+
+
+
+/************************************************ */
 /***************** VIDEO SECTION **************** */
 .no-video .featured-video-container video,
 .touch .featured-video-container video {
@@ -257,6 +287,8 @@ html, body{
   width: 100%;
 }
 
+
+/************************************************ */
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
   background-image: url("../images/backgroundbrick.JPG");
@@ -293,7 +325,17 @@ html, body{
   transition: all .75s ease-in-out;
 }
 
-/* ************    INSTAGRAM SECTION  ******************* */
+@media screen and (min-width: 1200px) {
+  /* **********  CLIENTS  ********** */
+  .clients-title {
+    padding-top: 40px;
+  }
+}
+
+
+
+/************************************************ */
+/* ************  INSTAGRAM SECTION  ************ */
 .personal-instagram-container {
   text-align: center;
   align-content: center;
@@ -313,7 +355,10 @@ html, body{
   height: 400px;
 }
 
-/* ************  CONTACT SECTION ********************* */
+
+
+/************************************************ */
+/* ************  CONTACT SECTION **************** */
 .contact-container {
   min-height: 800px;
   background-color: #353239;
@@ -370,6 +415,9 @@ textarea#message {
 }
 
 
+
+
+/************************************************ */
 /* ************  FOOTER SECTION  **************** */
 .footer-container {
   height: 150px;
@@ -396,44 +444,8 @@ textarea#message {
   color: #00A2AA;
 }
 
-
-
 @media screen and (min-width: 1200px) {
-  .navigation-container {
-    height: 70px;
-  }
-  .logo {
-    padding-left: 40px;
-    font-size: 22px;
-  }
-  .navigation-buttons a {
-    padding-right: 40px;
-    font-size: 18px;
-  }
-  .about-me-container,
-  .services-container,
-  .clients-overall-container,
-  .personal-instagram-container {
-    min-height: 800px;
-  }
-  .about-me-title,
-  .clients-title,
-  .instagram-title {
-    font-size: 32px;
-  }
-
-  /* *************  SERVICES ****************** */
-  .service {
-    width: 20%;
-    font-size: 22px;
-  }
-
-  /* ************   CLIENTS   ********************** */
-  .clients-title {
-    padding-top: 40px;
-  }
-
-  /* ************  FOOTER SECTION  **************** */
+  /* ********  FOOTER ********* */
   .footer-container {
     height: 200px;
   }
@@ -443,5 +455,4 @@ textarea#message {
   .social-media-icons {
     padding-bottom: 20px;
   }
-
 }
