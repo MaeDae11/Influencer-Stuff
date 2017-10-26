@@ -69,11 +69,13 @@ html, body{
   display: flex;
 }
 
-/* *************** ABOUT ME  ****************** */
-
+/* ***************  ABOUT ME SECTION  ****************** */
 .about-me-container {
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .about-me-title,
 .clients-title,
@@ -84,20 +86,63 @@ html, body{
   color: #00A2AA;
 }
 .about-me-information {
-  width: 40%;
+  width: 90%;
   color: white;
   font-size: 20px;
 }
-
 .about-me-image {
-  width: 40%;
+  width: 90%;
   text-align: center;
 }
 .about-me-image img{
-  width: 60%;
+  width: 80%;
 }
 
+@media screen and (min-width: 450px) {
+  /* *******  ABOUT ME  ********* */
+  .about-me-image img {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* *******  ABOUT ME  ********* */
+  .about-me-container {
+    flex-direction: row;
+  }
+  .about-me-information {
+    width: 40%;
+    color: white;
+    font-size: 20px;
+  }
+  .about-me-image {
+    width: 40%;
+    text-align: center;
+  }
+  .about-me-image img{
+    width: 80%;
+  }
+}
 
+@media screen and (min-width: 984px) {
+  /* *******  ABOUT ME  ********* */
+  .about-me-information {
+    width: 40%;
+  }
+  .about-me-image {
+    width: 40%;
+    text-align: center;
+  }
+  .about-me-image img{
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* *******  ABOUT ME  ********* */
+  .about-me-image img{
+    width: 65%;
+  }
+}
+    
 
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
@@ -306,7 +351,6 @@ textarea#message {
 
 
 
-
 @media screen and (min-width: 1200px) {
   .navigation-container {
     height: 70px;
@@ -330,6 +374,7 @@ textarea#message {
   .instagram-title {
     font-size: 32px;
   }
+
   /* *************  SERVICES ****************** */
   .service {
     width: 20%;
