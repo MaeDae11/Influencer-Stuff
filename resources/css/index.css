@@ -291,11 +291,13 @@ html, body{
 /************************************************ */
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
-  background-image: url("../images/backgroundbrick.JPG");
+  background-image: url("../images/backgrounddarkbrick.JPG");
   background-repeat:  no-repeat;
   background-size:  cover;
   flex-direction: column;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .clients-container {
   display: flex;
