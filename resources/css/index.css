@@ -98,6 +98,10 @@ html, body{
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
 .about-me-container {
+  /* background-image: url("../images/backgroundgradient.png");
+  background-repeat:  no-repeat;
+  background-size:  cover; */
+  border-top: 2px solid black;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -175,7 +179,7 @@ html, body{
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
 .services-container {
-  /* background-image: url("../images/backgroundexposedbrick.jpg"); */
+  background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
   justify-content: space-around;
@@ -291,7 +295,7 @@ html, body{
 /************************************************ */
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
-  background-image: url("../images/backgrounddarkbrick.JPG");
+  background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
   flex-direction: column;
