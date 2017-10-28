@@ -37,7 +37,7 @@ html, body{
   color: #3D9BEB;
 }
 .banner-container {
-  background-image: url("../images/backgroundcolorfulstereo.jpg");
+  background-image: url("../images/backgroundblurlights.jpg");
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -89,7 +89,7 @@ html, body{
 .clients-overall-container,
 .personal-instagram-container {
   min-height: 600px;
-  background-color: #353239;
+  background-color: #1C2B38;
   border-bottom: 2px solid black;
   display: flex;
 }
@@ -363,7 +363,7 @@ html, body{
 /* ************  CONTACT SECTION **************** */
 .contact-container {
   min-height: 800px;
-  background-color: #353239;
+  background-color: #1C2B38;
   color: white;
   display: flex;
   flex-direction: column;
