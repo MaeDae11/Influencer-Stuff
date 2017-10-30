@@ -90,7 +90,7 @@ html, body{
 .personal-instagram-container {
   min-height: 600px;
   background-color: #1C2B38;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
   display: flex;
 }
 
@@ -179,9 +179,9 @@ html, body{
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
 .services-container {
-  background-image: url("../images/backgrounddarkbrick2.jpeg");
+  /* background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
-  background-size:  cover;
+  background-size:  cover; */
   justify-content: space-around;
   align-items: center;
   height: 100%;
@@ -272,7 +272,7 @@ html, body{
   width: 100%;
   overflow: hidden;
   background: #000;
-  border-bottom: 2px solid black;
+  /* border-bottom: 2px solid black; */
 }
 .featured-video-container .filter {
   z-index: 20;
