@@ -86,7 +86,7 @@ html, body{
 /* ********************** BODY OF WEBSITE ********************/
 .about-me-container,
 .services-container,
-.clients-overall-container,
+/* .clients-overall-container, */
 .personal-instagram-container {
   min-height: 600px;
   background-color: #1C2B38;
@@ -298,7 +298,6 @@ html, body{
   /* background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover; */
-  flex-direction: column;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -314,13 +313,16 @@ html, body{
 
 }
 .client img {
-  /* opacity: .8; */
   width: 300px;
-  /* height: 100%; */
-  /* transition: all .75s ease-in-out;
-  -webkit-transition: all .75s ease;
-  -moz-transition: all .75s ease;
-  -o-transition: all .75s ease; */
+  max-height: 100px;
+  padding: 40px;
+}
+.haste img {
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 55px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 .client img:hover {
   /* cursor: pointer;
