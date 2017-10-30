@@ -30,7 +30,7 @@ html, body{
   color: white;
 }
 .logo {
-  font-family: 'Rammetto One', cursive; 
+  font-family: 'Rammetto One', sans-serif; 
 }
 .navigation-buttons {
   display: flex;
@@ -45,8 +45,7 @@ html, body{
   -o-transition: color .5s ease;
   transition: color .5s ease;
 }
-.navigation-buttons a:after,
-.navigation-buttons a:before {
+.navigation-buttons a:after{
     border: 1px solid black;
     bottom: 0px;
     content: " ";
@@ -54,8 +53,7 @@ html, body{
     transition: all 280ms ease-in-out;
     width: 0;
 }
-.navigation-buttons a:hover:after,
-.navigation-buttons a:hover:before {
+.navigation-buttons a:hover:after{
     border-color:#3D9BEB;
     transition: width 350ms ease-in-out;
     width: 100%;
@@ -80,7 +78,7 @@ html, body{
 .influencer-title {
   text-align: center;
   font-size: 40px;
-  font-family: 'Rammetto One', cursive; 
+  font-family: 'Rammetto One', sans-serif; 
   letter-spacing: .2em;
   color: white;
   width: 100%;
@@ -100,17 +98,6 @@ html, body{
     padding-right: 40px;
     font-size: 18px;
   }
-  .about-me-container,
-  .services-overall-container,
-  .clients-overall-container,
-  .personal-instagram-container {
-    min-height: 800px;
-  }
-  .about-me-title,
-  .clients-title,
-  .instagram-title {
-    font-size: 32px;
-  }
 }
 
 /************************************************ */
@@ -124,6 +111,44 @@ html, body{
   display: flex;
 }
 
+.contact-title, 
+.about-me-title,
+.clients-title,
+.instagram-title,
+.services-title  {
+  font-size: 24px;
+  font-family: 'Rammetto One', sans-serif; 
+  letter-spacing: .2em;
+  color: #3D9BEB;
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 984px) {
+  .contact-title, 
+  .about-me-title,
+  .clients-title,
+  .instagram-title,
+  .services-title {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-me-container,
+  .services-overall-container,
+  .clients-overall-container,
+  .personal-instagram-container {
+    min-height: 800px;
+  }
+  .contact-title,
+  .about-me-title,
+  .clients-title,
+  .instagram-title,
+  .services-title  {
+    font-size: 32px;
+  }
+}
 
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
@@ -133,15 +158,6 @@ html, body{
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 100px;
-}
-.about-me-title,
-.clients-title,
-.instagram-title,
-.services-title {
-  font-size: 24px;
-  font-family: 'Rammetto One', cursive; 
-  letter-spacing: .2em;
-  color: #3D9BEB;
 }
 .about-me-information {
   width: 90%;
@@ -213,7 +229,6 @@ html, body{
   text-align: center;
 }
 .services-only-container {
-  
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -231,6 +246,12 @@ html, body{
   text-align: center;
   font-size: 20px;
   color: white;
+}
+.each-service-title {
+  font-size: 18px;
+  font-family: 'Rammetto One', sans-serif; 
+  letter-spacing: .2em;
+  color: #3D9BEB;
 }
 .icon {
   margin: 0 auto;
@@ -257,6 +278,9 @@ html, body{
     text-align: center;
     font-size: 18px;
   }
+  .each-service-title {
+    font-size: 23px;
+  }
   .icon {
     margin: 0;
   }
@@ -270,6 +294,9 @@ html, body{
   .service {
     width: 25%;
     font-size: 22px;
+  }
+  .each-service-title {
+    font-size: 26px;
   }
 }
 
@@ -348,7 +375,6 @@ html, body{
 }
 @media screen and (min-width: 984px) {
   .clients-title {
-    font-size: 28px;
     padding-bottom: 40px;
   }
   .client img {
@@ -401,12 +427,7 @@ html, body{
   justify-content: center;
   align-items: center;
 }
-.contact-title {
-  font-size: 28px;
-  font-family: 'Rammetto One', cursive; 
-  letter-spacing: .2em;
-  color: #3D9BEB;
-}
+
 .contact-name,
 .contact-email,
 .contact-message {
