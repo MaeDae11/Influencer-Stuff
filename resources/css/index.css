@@ -33,6 +33,15 @@ html, body{
   font-family: 'Rammetto One', cursive; 
 }
 /* navigation buttons are styled with social icons in footer as overlaped */
+.navigation-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  -webkit-transition: color .5s ease;
+  -moz-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease;
+}
 .navigation-buttons a:hover {
   color: #3D9BEB;
 }
@@ -57,6 +66,7 @@ html, body{
   background-color: rgba(0, 0, 0, 0.8);
   padding: 30px;
 }
+
 @media screen and (min-width: 1200px) {
   .navigation-container {
     height: 70px;
@@ -86,7 +96,6 @@ html, body{
 /* ********************** BODY OF WEBSITE ********************/
 .about-me-container,
 .services-overall-container,
-/* .clients-overall-container, */
 .personal-instagram-container {
   min-height: 600px;
   background-color: #18222b;
@@ -131,9 +140,6 @@ html, body{
   width: 80%;
 }
 
-@media screen and (min-width: 550px) {
-
-}
 @media screen and (min-width: 768px) {
   /* *******  ABOUT ME  ********* */
   .about-me-container {
@@ -154,9 +160,7 @@ html, body{
     margin-left: 30px;
     margin-bottom: 10px;
   }
-
 }
-
 @media screen and (min-width: 984px) {
   /* *******  ABOUT ME  ********* */
   .about-me-information {
@@ -177,6 +181,7 @@ html, body{
 }
 
 
+
 /************************************************ */
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
@@ -187,9 +192,7 @@ html, body{
   text-align: center;
 }
 .services-only-container {
-  /* background-image: url("../images/backgrounddarkbrick2.jpeg");
-  background-repeat:  no-repeat;
-  background-size:  cover; */
+  
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -251,6 +254,7 @@ html, body{
 
 
 
+
 /************************************************ */
 /***************** VIDEO SECTION **************** */
 .no-video .featured-video-container video,
@@ -289,15 +293,12 @@ html, body{
 }
 
 
+
 /************************************************ */
 /* ************   CLIENTS   ********************** */
 .clients-overall-container {
-  /* background-image: url("../images/backgrounddarkbrick2.jpeg");
-  background-repeat:  no-repeat;
-  background-size:  cover; */
   text-align: center;
   padding-top: 100px;
-  /* padding-bottom: 60px; */
   background: #18222b;
 }
 .clients-container {
@@ -307,10 +308,8 @@ html, body{
   align-content: center;
   align-items: center;
 }
-.client {
-}
 .client img {
-  width: 300px;
+  width: 200px;
   max-height: 100px;
   padding: 40px;
   transition: all .75s ease-in-out;
@@ -329,6 +328,11 @@ html, body{
 @media screen and (min-width: 984px) {
   .clients-title {
     font-size: 28px;
+    padding-bottom: 40px;
+  }
+  .client img {
+    width: 300px;
+    max-height: 100px;
   }
 }
 
@@ -419,16 +423,26 @@ textarea#message {
   border-radius: 30px;
   font-size: 13px;
   background-color: white;
+  border: 2px solid #18222b;
+  color:#18222b;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.contact-send-button button:hover {
   border: 2px solid #3D9BEB;
   color: #3D9BEB;
 }
 
 
 
-
 /************************************************ */
 /* ************  FOOTER SECTION  **************** */
 .footer-container {
+  background-image: url("../images/backgrounddarkbrick2.jpeg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
   height: 175px;
   background-color: black;
   color: white;
@@ -443,8 +457,7 @@ textarea#message {
   align-items: center;
 }
 
-.social-media-icons a,
-.navigation-buttons a  {
+.social-media-icons a{
   text-decoration: none;
   color: white;
   padding: 10px;
