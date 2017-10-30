@@ -32,7 +32,10 @@ html, body{
 .logo {
   font-family: 'Rammetto One', cursive; 
 }
-/* navigation buttons are styled with social icons in footer as overlaped */
+.navigation-buttons {
+  display: flex;
+}
+
 .navigation-buttons a {
   text-decoration: none;
   color: white;
@@ -42,9 +45,27 @@ html, body{
   -o-transition: color .5s ease;
   transition: color .5s ease;
 }
-.navigation-buttons a:hover {
-  color: #3D9BEB;
+.navigation-buttons a:after,
+.navigation-buttons a:before {
+    border: 1px solid black;
+    bottom: 0px;
+    content: " ";
+    display: block;
+    transition: all 280ms ease-in-out;
+    width: 0;
 }
+.navigation-buttons a:hover:after,
+.navigation-buttons a:hover:before {
+    border-color:#3D9BEB;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+.navigation-buttons a:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 100%;
+}
+
 .banner-container {
   background-image: url("../images/backgroundblurlights-min.jpg");
   background-position: center center;
