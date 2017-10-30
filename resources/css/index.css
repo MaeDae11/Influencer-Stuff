@@ -37,7 +37,7 @@ html, body{
   color: #3D9BEB;
 }
 .banner-container {
-  background-image: url("../images/backgroundblurlights.jpg");
+  background-image: url("../images/backgroundblurlights-min.jpg");
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -70,7 +70,7 @@ html, body{
     font-size: 18px;
   }
   .about-me-container,
-  .services-container,
+  .services-overall-container,
   .clients-overall-container,
   .personal-instagram-container {
     min-height: 800px;
@@ -85,7 +85,7 @@ html, body{
 /************************************************ */
 /* ********************** BODY OF WEBSITE ********************/
 .about-me-container,
-.services-container,
+.services-overall-container,
 /* .clients-overall-container, */
 .personal-instagram-container {
   min-height: 600px;
@@ -98,10 +98,6 @@ html, body{
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
 .about-me-container {
-  /* background-image: url("../images/backgroundgradient.png");
-  background-repeat:  no-repeat;
-  background-size:  cover; */
-  /* border-top: 2px solid black; */
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
@@ -118,8 +114,9 @@ html, body{
 }
 .about-me-information {
   width: 90%;
-  color: white;
+  color: lightgrey;
   font-size: 18px;
+  letter-spacing: .1em;
 }
 .about-me-image {
   width: 90%;
@@ -142,8 +139,8 @@ html, body{
   }
   .about-me-information {
     width: 45%;
-    color: white;
     font-size: 20px;
+    padding-top: 100px;
   }
   .about-me-image {
     width: 40%;
@@ -178,16 +175,23 @@ html, body{
 /************************************************ */
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
-.services-container {
+.services-overall-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  text-align: center;
+}
+.services-only-container {
   /* background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover; */
+  display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  width: 100%;
   flex-wrap: wrap;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 /* individual container */
 .service {
@@ -299,8 +303,8 @@ html, body{
   background-repeat:  no-repeat;
   background-size:  cover; */
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  /* padding-bottom: 60px; */
   background: #18222b;
 }
 .clients-container {
@@ -351,8 +355,8 @@ html, body{
   justify-content: space-around;
   flex-direction: column;
   overflow: scroll;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .instagram-title {
   padding-bottom: 50px;
@@ -451,13 +455,28 @@ textarea#message {
   text-decoration: none;
   color: white;
   padding: 10px;
+}
+.fa-facebook-square,
+.fa-twitter-square,
+.fa-instagram,
+.fa-youtube-play {
+  color: white;
   -webkit-transition: color .5s ease;
   -moz-transition: color .5s ease;
   -o-transition: color .5s ease;
   transition: color .5s ease;
 }
-.social-media-icons a:hover{
-  color: #3D9BEB;
+.fa-facebook-square:hover{
+  color: #4C68A5;
+}
+.fa-twitter-square:hover {
+  color: #45A1EC;
+}
+.fa-instagram:hover {
+  color: #B62B90;
+}
+.fa-youtube-play:hover {
+  color: #EB3223;
 }
 .social-media-icons {
   padding-bottom: 30px;
