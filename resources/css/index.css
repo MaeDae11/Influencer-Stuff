@@ -102,11 +102,12 @@ html, body{
   align-items: center;
   flex-direction: column;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 .about-me-title,
 .clients-title,
-.instagram-title {
+.instagram-title,
+.services-title {
   font-size: 24px;
   font-family: 'Rammetto One', cursive; 
   letter-spacing: .2em;
@@ -118,6 +119,10 @@ html, body{
   font-size: 18px;
   letter-spacing: .1em;
 }
+.about-me-paragraph {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .about-me-image {
   width: 90%;
   text-align: center;
@@ -127,10 +132,7 @@ html, body{
 }
 
 @media screen and (min-width: 550px) {
-  /* *******  ABOUT ME  ********* */
-  .about-me-image img {
-    width: 55%;
-  }
+
 }
 @media screen and (min-width: 768px) {
   /* *******  ABOUT ME  ********* */
@@ -138,36 +140,39 @@ html, body{
     flex-direction: row;
   }
   .about-me-information {
-    width: 45%;
     font-size: 20px;
     padding-top: 100px;
   }
-  .about-me-image {
-    width: 40%;
-    text-align: center;
+  /* *******  ABOUT ME  ********* */
+  .about-me-paragraph {
+    display: unset;
+    text-align: justify;
   }
-  .about-me-image img{
-    width: 80%;
+  .about-me-image img {
+    float: right;
+    width: 350px;
+    margin-left: 30px;
+    margin-bottom: 10px;
   }
+
 }
 
 @media screen and (min-width: 984px) {
   /* *******  ABOUT ME  ********* */
   .about-me-information {
-    width: 40%;
+    width: 90%;
     font-size: 22px;
   }
-  .about-me-image {
-    width: 40%;
-  }
-  .about-me-image img{
-    width: 80%;
+  .about-me-image img {
+    width: 400px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   /* *******  ABOUT ME  ********* */
-  .about-me-image img{
-    width: 65%;
+  .about-me-information {
+    width: 85%;
+    font-size: 22px;
   }
 }
 
@@ -210,12 +215,6 @@ html, body{
   width: 55%;
   margin: 0 auto;
 }
-.services-title {
-  font-size: 24px;
-  font-family: 'Rammetto One', cursive; 
-  letter-spacing: .2em;
-  color: #3D9BEB;
-}
 .service-icons {
   color: white;
 }
@@ -234,9 +233,6 @@ html, body{
     text-align: center;
     font-size: 18px;
   }
-  .services-title {
-    font-size: 20px;
-  }
   .icon {
     margin: 0;
   }
@@ -250,9 +246,6 @@ html, body{
   .service {
     width: 25%;
     font-size: 22px;
-  }
-  .services-title {
-    font-size: 24px;
   }
 }
 
