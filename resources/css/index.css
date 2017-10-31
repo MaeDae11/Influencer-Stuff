@@ -17,9 +17,8 @@ font-family: 'Fredericka the Great', cursive; */
 html, body{
   margin: 0;
   height: 100%;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  letter-spacing: .1em;
 }
 /************************************************ */
 /* *************** NAVIGATION AND FOCAL MAIN IMAGE ********************* */
@@ -57,7 +56,7 @@ html, body{
   top: 0;
   left: 0;
   background: rgba(16, 19, 22, 0.7);
-  color: white;
+  color: #bfe5ff;
 }
 .logo {
   font-family: 'Fredericka the Great', cursive;
@@ -68,7 +67,7 @@ html, body{
 }
 .navigation-buttons a {
   text-decoration: none;
-  color: white;
+  color: #bfe5ff;
   padding: 10px;
   -webkit-transition: color .5s ease;
   -moz-transition: color .5s ease;
@@ -141,7 +140,8 @@ html, body{
 .instagram-title,
 .services-title  {
   font-size: 28px;
-  font-family: 'Baloo Tamma', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   letter-spacing: .2em;
   color: #3D9BEB;
   text-shadow: 1px 1px 0 #000;
@@ -213,18 +213,18 @@ html, body{
     flex-direction: row;
   }
   .about-me-information {
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 100px;
   }
   /* *******  ABOUT ME  ********* */
   .about-me-paragraph {
     display: unset;
-    text-align: justify;
+    text-align: left;
   }
   .about-me-image img {
-    float: right;
+    float: left;
     width: 350px;
-    margin-left: 30px;
+    padding-right: 30px;
     margin-bottom: 10px;
   }
 }
@@ -232,7 +232,7 @@ html, body{
   /* *******  ABOUT ME  ********* */
   .about-me-information {
     width: 90%;
-    font-size: 22px;
+    font-size: 18px;
   }
   .about-me-image img {
     width: 400px;
@@ -243,7 +243,7 @@ html, body{
   /* *******  ABOUT ME  ********* */
   .about-me-information {
     width: 85%;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -282,7 +282,7 @@ html, body{
 }
 .each-service-title {
   font-size: 18px;
-  font-family: 'Baloo Thambi', cursive;
+  font-family: 'Raleway', sans-serif;
   letter-spacing: .2em;
   color: #3D9BEB;
 }
@@ -472,7 +472,7 @@ html, body{
 .contact-name,
 .contact-email,
 .contact-message {
-  font-family: 'Baloo Thambi', cursive;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 24px;
   display: flex;
