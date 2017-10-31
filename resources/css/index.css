@@ -6,6 +6,11 @@ font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Bowlby One SC', cursive;
 font-family: 'Rammetto One', cursive; 
 */
+/* font-family: 'Baloo Tamma', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Baloo Thambi', cursive;
+font-family: 'Autour One', cursive;
+font-family: 'Fredericka the Great', cursive; */
 .main-container {
 
 }
@@ -28,15 +33,17 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 2px 2px 5px #000;
 }
 .influencer-title {
   text-align: center;
   font-size: 32px;
-  font-family: 'Rammetto One', sans-serif; 
-  letter-spacing: .2em;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
+  letter-spacing: .3em;
   color: white;
   width: 100%;
-  background-color: rgba(16, 19, 22, 0.8);
+  background-color: rgba(16, 19, 22, .95);
   padding: 30px;
 }
 .navigation-container {
@@ -53,7 +60,7 @@ html, body{
   color: white;
 }
 .logo {
-  font-family: 'Rammetto One', sans-serif; 
+  font-family: 'Fredericka the Great', cursive;
   padding-left: 20px;
 }
 .navigation-buttons {
@@ -91,7 +98,7 @@ html, body{
 
 @media screen and (min-width: 984px) {
   .influencer-title {
-    font-size: 40px;
+    font-size: 44px;
     padding: 30px;
   }
   .navigation-container {
@@ -133,10 +140,11 @@ html, body{
 .clients-title,
 .instagram-title,
 .services-title  {
-  font-size: 24px;
-  font-family: 'Rammetto One', sans-serif; 
+  font-size: 28px;
+  font-family: 'Baloo Tamma', cursive;
   letter-spacing: .2em;
   color: #3D9BEB;
+  text-shadow: 1px 1px 0 #000;
 }
 @media screen and (min-width: 768px) {
 
@@ -148,7 +156,7 @@ html, body{
   .clients-title,
   .instagram-title,
   .services-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -163,13 +171,13 @@ html, body{
   .clients-title,
   .instagram-title,
   .services-title  {
-    font-size: 32px;
+    font-size: 38px;
   }
 }
 
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
-.about-me-container {
+.about-me-container { 
   background-image: url("../images/backgrounddarkbrick2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
@@ -178,7 +186,8 @@ html, body{
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 100px;
-  border-top: .75px solid #18222b;
+  border-top: 1px solid #18222b;
+  border-bottom: 1px solid #18222b;
 }
 .about-me-information {
   width: 90%;
@@ -244,6 +253,10 @@ html, body{
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
 .services-overall-container {
+  /* background-image: url("../images/backgroundbench.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover; */
+  background-position: bottom left;
   padding-top: 40px;
   flex-direction: column;
   text-align: center;
@@ -254,7 +267,7 @@ html, body{
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 40px;
   padding-bottom: 70px;
 }
 /* individual container */
@@ -269,7 +282,7 @@ html, body{
 }
 .each-service-title {
   font-size: 18px;
-  font-family: 'Rammetto One', sans-serif; 
+  font-family: 'Baloo Thambi', cursive;
   letter-spacing: .2em;
   color: #3D9BEB;
 }
@@ -297,6 +310,10 @@ html, body{
     align-items: center;
     text-align: center;
     font-size: 18px;
+  }
+  .services-only-container {
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
   .each-service-title {
     font-size: 23px;
@@ -438,8 +455,12 @@ html, body{
 /************************************************ */
 /* ************  CONTACT SECTION **************** */
 .contact-container {
+  background-image: url("../images/backgroundpaperwall3.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: bottom left;
   min-height: 800px;
-  background-color: #18222b;
+  /* background-color: #18222b; */
   color: white;
   display: flex;
   flex-direction: column;
@@ -447,13 +468,17 @@ html, body{
   align-items: center;
 }
 
+
 .contact-name,
 .contact-email,
 .contact-message {
+  font-family: 'Baloo Thambi', cursive;
+  font-weight: 300;
+  font-size: 24px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  color: #3D9BEB;
+  color: #bfe5ff;
 }
 .name-email-section {
   display: flex;
