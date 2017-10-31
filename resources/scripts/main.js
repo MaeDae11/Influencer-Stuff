@@ -1,6 +1,8 @@
 //jQuery is required to run this code
 // runs video
+$(".description-networking").hide()
 $( document ).ready(function() {
+    
     scaleVideoContainer();
     initBannerVideoSize('.featured-video-container .poster img');
     initBannerVideoSize('.featured-video-container .filter');
@@ -45,3 +47,175 @@ function scaleBannerVideoSize(element){
 
 
 
+// servicesDescriptionOpen = () => {
+//     $(".service-networking-icon").click((event) => {
+//         console.log("clicking")
+//         event.preventDefault();
+//         $(".description-networking").slideDown()
+//     })
+// }
+
+// servicesDescriptionClose = () => {
+//     $(".exit-description").click((event) => {
+//         console.log("exiting")
+//         event.preventDefault();
+//         $(".description-networking").slideUp()
+//     })
+// }
+
+// servicesDescriptionOpen();
+// servicesDescriptionClose();
+
+
+// Get the modal
+var $MODAL = $('#myModal');
+// Get the button that opens the modal
+var btn = $('.service-networking-icon');
+// Get the <span> element that closes the modal
+var span = $('.close');
+// When the user clicks on the button, open the modal 
+openModal = () => {
+    btn.click((event) => {
+        event.preventDefault();
+        console.log("button");
+        $MODAL.slideDown();
+    })
+}
+
+// When the user clicks on <span> (x), close the modal
+closeModalThroughX = () => {
+    span.click((event) => {
+        console.log("span");
+        $MODAL.slideUp();
+    })
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+$(window).click((event) => {
+    event.preventDefault();
+    let target = $( event.target );
+    if (target.is($MODAL)) {
+        console.log("if")
+        $MODAL.slideUp();
+    } else {
+        console.log("else")
+    }
+})
+
+
+openModal();
+closeModalThroughX();
+
+
+
+
+
+
+
+
+/**
+ * dialog box v0.1
+ * Ashwin Saxena
+ */
+;( function( window ) {
+
+'use strict';
+
+var support = { animations : Modernizr.cssanimations },
+    animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
+    animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
+    onEndAnimation = function( el, callback ) {
+        var onEndCallbackFn = function( ev ) {
+            if( support.animations ) {
+                if( ev.target != this ) return;
+                this.removeEventListener( animEndEventName, onEndCallbackFn );
+            }
+            if( callback && typeof callback === 'function' ) { callback.call(); }
+        };
+        if( support.animations ) {
+            el.addEventListener( animEndEventName, onEndCallbackFn );
+        }
+        else {
+            onEndCallbackFn();
+        }
+    };
+
+function extend( a, b ) {
+    for( var key in b ) { 
+        if( b.hasOwnProperty( key ) ) {
+            a[key] = b[key];
+        }
+    }
+    return a;
+}
+
+function DialogFx( el, options ) {
+    this.el = el;
+    this.options = extend( {}, this.options );
+    extend( this.options, options );
+    this.ctrlClose = this.el.querySelector( '[data-dialog-close]' );
+    this.isOpen = false;
+    this._initEvents();
+}
+
+DialogFx.prototype.options = {
+    // callbacks
+    onOpenDialog : function() { return false; },
+    onCloseDialog : function() { return false; }
+}
+
+DialogFx.prototype._initEvents = function() {
+    var self = this;
+
+    // close action
+    this.ctrlClose.addEventListener( 'click', this.toggle.bind(this) );
+
+    // esc key closes dialog
+    document.addEventListener( 'keydown', function( ev ) {
+        var keyCode = ev.keyCode || ev.which;
+        if( keyCode === 27 && self.isOpen ) {
+            self.toggle();
+        }
+    } );
+
+    this.el.querySelector( '.dialog__overlay' ).addEventListener( 'click', this.toggle.bind(this) );
+}
+DialogFx.prototype.toggle = function() {
+    var self = this;
+    if( this.isOpen ) {
+        classie.remove( this.el, 'dialog--open' );
+        classie.add( self.el, 'dialog--close' );
+        onEndAnimation( this.el.querySelector( '.dialog__content' ), function() {
+            classie.remove( self.el, 'dialog--close' );
+        } );
+        // callback on close
+        this.options.onCloseDialog( this );
+    }
+    else {
+        classie.add( this.el, 'dialog--open' );
+
+        // callback on open
+        this.options.onOpenDialog( this );
+    }
+    this.isOpen = !this.isOpen;
+};
+
+// add to global namespace
+window.DialogFx = DialogFx;
+
+})( window );
+
+/* call */
+
+
+(function() {
+
+    var dlgtrigger = document.querySelector( '[data-dialog]' ),
+        somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
+        dlg = new DialogFx( somedialog );
+
+    dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+
+})();
+    

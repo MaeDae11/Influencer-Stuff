@@ -56,7 +56,7 @@ html, body{
   top: 0;
   left: 0;
   background: rgba(16, 19, 22, 0.7);
-  color: #bfe5ff;
+  color: white;
 }
 .logo {
   font-family: 'Fredericka the Great', cursive;
@@ -67,7 +67,7 @@ html, body{
 }
 .navigation-buttons a {
   text-decoration: none;
-  color: #bfe5ff;
+  color: white;
   padding: 10px;
   -webkit-transition: color .5s ease;
   -moz-transition: color .5s ease;
@@ -78,6 +78,7 @@ html, body{
 /* hover effect of underlining navigation words */
 .navigation-buttons a:after{
     border: 1px solid black;
+    color: white;
     bottom: 0px;
     content: " ";
     display: block;
@@ -141,7 +142,7 @@ html, body{
 .services-title  {
   font-size: 28px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: .2em;
   color: #3D9BEB;
   text-shadow: 1px 1px 0 #000;
@@ -289,6 +290,9 @@ html, body{
 .icon {
   margin: 0 auto;
 }
+.icon:hover {
+  cursor: pointer;
+}
 .summary {
   width: 55%;
   margin: 0 auto;
@@ -296,7 +300,37 @@ html, body{
 .service-icons {
   color: white;
 }
-
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 @media screen and (min-width: 650px) {
   .service {
     width: 80%;
@@ -474,11 +508,11 @@ html, body{
 .contact-message {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  color: #bfe5ff;
+  color:white;
 }
 .name-email-section {
   display: flex;
@@ -543,7 +577,10 @@ textarea#message {
   justify-content: center;
   align-items: center;
 }
-
+.link-to-website {
+  text-decoration: none;
+  color: white;
+}
 .social-media-icons a{
   text-decoration: none;
   color: white;
@@ -587,4 +624,154 @@ textarea#message {
 }
 @media screen and (min-width: 1200px) {
 
+}
+
+
+
+
+
+/* Modal Popup */
+button {
+	padding: 1em 2em;
+	outline: none;
+	font-weight: 600;
+	border: none;
+	color: #fff;
+	background: #c94e50;
+}
+.dialog,
+.dialog__overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.dialog {
+	position: fixed;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	pointer-events: none;
+}
+.dialog__overlay {
+	position: absolute;
+	z-index: 1;
+	background: rgba(55, 58, 71, 0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+.dialog--open .dialog__overlay {
+	opacity: 1;
+	pointer-events: auto;
+}
+.dialog__content {
+	width: 50%;
+	max-width: 560px;
+	min-width: 290px;
+	background: #fff;
+	padding: 4em;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	opacity: 0;
+}
+.dialog--open .dialog__content {
+	pointer-events: auto;
+}
+/* Content */
+.dialog h2 {
+	margin: 0;
+	font-weight: 400;
+	font-size: 2em;
+	padding: 0 0 2em;
+	margin: 0;
+}
+.dialog--open .dialog__overlay {
+	-webkit-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.dialog--close .dialog__overlay {
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.dialog__content {
+	padding: 0;
+	background: transparent;
+}
+.dialog.dialog--open .dialog__content {
+	opacity: 1;
+}
+.morph-shape {
+	position: absolute;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	top: -2px;
+	left: -2px;
+	z-index: -1;
+}
+.morph-shape svg rect {
+	stroke: #fff;
+	stroke-width: 2px;
+	stroke-dasharray: 1680;
+}
+.dialog--open .morph-shape svg rect {
+	-webkit-animation: anim-dash 0.6s forwards;
+	animation: anim-dash 0.6s forwards;
+}
+.dialog-inner {
+	opacity: 0;
+	background: #fff;
+}
+.dialog--open .dialog-inner {
+	padding: 4em;
+	opacity: 1;
+	-webkit-transition: opacity 0.85s 0.35s;
+	transition: opacity 0.85s 0.35s;
+}
+.dialog.dialog--open h2 {
+	-webkit-animation: anim-elem-1 0.7s ease-out both;
+	animation: anim-elem-1 0.7s ease-out both;
+}
+.dialog.dialog--open button {
+	-webkit-animation: anim-elem-2 0.7s ease-out both;
+	animation: anim-elem-2 0.7s ease-out both;
+}
+@keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+@-webkit-keyframes anim-dash {
+	0% {
+		stroke-dashoffset: 1680;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+/* Inner elements animations */
+@-webkit-keyframes anim-elem-1 {
+	0% { opacity: 0; -webkit-transform: translate3d(-150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+@keyframes anim-elem-1 {
+	0% { opacity: 0; -webkit-transform: translate3d(-150px, 0, 0); transform: translate3d(-150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+}
+@-webkit-keyframes anim-elem-2 {
+	0% { opacity: 0; -webkit-transform: translate3d(150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+}
+@keyframes anim-elem-2 {
+	0% { opacity: 0; -webkit-transform: translate3d(150px, 0, 0); transform: translate3d(150px, 0, 0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 }
