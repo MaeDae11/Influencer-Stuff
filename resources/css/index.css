@@ -253,6 +253,9 @@ html, body{
 /************************************************ */
 /* ***************  SERVICES   ****************** */
 /* overall container with all 3 services */
+.hidden {
+  display: none;
+}
 .services-overall-container {
   /* background-image: url("../images/backgroundbench.jpg");
   background-repeat:  no-repeat;

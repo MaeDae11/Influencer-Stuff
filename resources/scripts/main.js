@@ -67,45 +67,45 @@ function scaleBannerVideoSize(element){
 // servicesDescriptionClose();
 
 
-// Get the modal
-var $MODAL = $('#myModal');
-// Get the button that opens the modal
-var btn = $('.service-networking-icon');
-// Get the <span> element that closes the modal
-var span = $('.close');
-// When the user clicks on the button, open the modal 
-openModal = () => {
-    btn.click((event) => {
-        event.preventDefault();
-        console.log("button");
-        $MODAL.slideDown();
-    })
-}
+// // Get the modal
+// var $MODAL = $('#myModal');
+// // Get the button that opens the modal
+// var btn = $('.service-networking-icon');
+// // Get the <span> element that closes the modal
+// var span = $('.close');
+// // When the user clicks on the button, open the modal 
+// openModal = () => {
+//     btn.click((event) => {
+//         event.preventDefault();
+//         console.log("button");
+//         $MODAL.slideDown();
+//     })
+// }
 
-// When the user clicks on <span> (x), close the modal
-closeModalThroughX = () => {
-    span.click((event) => {
-        console.log("span");
-        $MODAL.slideUp();
-    })
-}
+// // When the user clicks on <span> (x), close the modal
+// closeModalThroughX = () => {
+//     span.click((event) => {
+//         console.log("span");
+//         $MODAL.slideUp();
+//     })
+// }
 
-// When the user clicks anywhere outside of the modal, close it
+// // When the user clicks anywhere outside of the modal, close it
 
-$(window).click((event) => {
-    event.preventDefault();
-    let target = $( event.target );
-    if (target.is($MODAL)) {
-        console.log("if")
-        $MODAL.slideUp();
-    } else {
-        console.log("else")
-    }
-})
+// $(window).click((event) => {
+//     event.preventDefault();
+//     let target = $( event.target );
+//     if (target.is($MODAL)) {
+//         console.log("if")
+//         $MODAL.slideUp();
+//     } else {
+//         console.log("else")
+//     }
+// })
 
 
-openModal();
-closeModalThroughX();
+// openModal();
+// closeModalThroughX();
 
 
 
@@ -121,14 +121,14 @@ closeModalThroughX();
 ;( function( window ) {
 
 'use strict';
-
+// checks to see if animation is supported
 var support = { animations : Modernizr.cssanimations },
     animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
     animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
     onEndAnimation = function( el, callback ) {
-        var onEndCallbackFn = function( ev ) {
+        var onEndCallbackFn = function( event ) {
             if( support.animations ) {
-                if( ev.target != this ) return;
+                if( event.target != this ) return;
                 this.removeEventListener( animEndEventName, onEndCallbackFn );
             }
             if( callback && typeof callback === 'function' ) { callback.call(); }
@@ -158,7 +158,6 @@ function DialogFx( el, options ) {
     this.isOpen = false;
     this._initEvents();
 }
-
 DialogFx.prototype.options = {
     // callbacks
     onOpenDialog : function() { return false; },
@@ -206,16 +205,22 @@ window.DialogFx = DialogFx;
 
 })( window );
 
-/* call */
-
-
+/* calls function to bind click to trigger */
 (function() {
+    var networkingTrigger = document.querySelector( '[data-dialog="networking"]' ),
+        networking = document.getElementById( networkingTrigger.getAttribute( 'data-dialog' ) ),
+        dlg = new DialogFx( networking );
+    networkingTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 
-    var dlgtrigger = document.querySelector( '[data-dialog]' ),
-        somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
-        dlg = new DialogFx( somedialog );
+    var sponsorshipTrigger = document.querySelector( '[data-dialog="sponsorship"]' ),
+        sponsorship = document.getElementById( sponsorshipTrigger.getAttribute( 'data-dialog' ) ),
+        dlg = new DialogFx( sponsorship );
+    sponsorshipTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 
-    dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
-
+    var managementTrigger = document.querySelector( '[data-dialog="management"]' ),
+        management = document.getElementById( managementTrigger.getAttribute( 'data-dialog' ) ),
+        dlg = new DialogFx( management );
+        console.log(dlg)
+    managementTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 })();
     
