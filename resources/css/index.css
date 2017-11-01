@@ -13,7 +13,7 @@ html, body{
 /************************************************ */
 /* *************** NAVIGATION AND FOCAL MAIN IMAGE ********************* */
 .banner-container {
-  background-image: url("../images/backgroundwomangrafitti.jpg");
+  background-image: url("../images/backgroundblurlights.jpg");
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
@@ -121,7 +121,7 @@ html, body{
 .services-overall-container,
 .personal-instagram-container {
   min-height: 600px;
-  background-color: #18222b;
+
   /* border-bottom: 2px solid black; */
   display: flex;
 }
@@ -167,20 +167,25 @@ html, body{
 
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
-.about-me-container { 
-  /* background-image: url("../images/backgrounddarkbrick3-min.jpg");
+.top-section {
+  background-image: url("../images/backgroundstairs1.jpg");
   background-repeat:  no-repeat;
-  background-size:  cover; */
-  background-color: white;
+  background-size:  cover;
+}
+.about-me-container { 
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding-top: 40px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 40px;
 }
 .about-me-information {
-  width: 90%;
-  color: #444444;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* -moz-box-shadow: -1px -2px 20px rgba(0,0,0,.5);
+  -webkit-box-shadow: -1px -2px 20px rgba(0,0,0,.5);
+  box-shadow: inset 0px 0px 20px 20px white, 0px 0px 15px 15px white; */
+  width: 100%;
+  color: white;
   font-size: 18px;
   letter-spacing: .1em;
 }
@@ -203,7 +208,8 @@ html, body{
   }
   .about-me-information {
     font-size: 16px;
-    padding-top: 100px;
+    padding: 50px;
+
   }
   /* *******  ABOUT ME  ********* */
   .about-me-paragraph {
@@ -220,18 +226,18 @@ html, body{
 @media screen and (min-width: 984px) {
   /* *******  ABOUT ME  ********* */
   .about-me-information {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
   .about-me-image img {
-    width: 400px;
+    width: 300px;
     margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   /* *******  ABOUT ME  ********* */
   .about-me-information {
-    width: 85%;
+    width: 100%;
     font-size: 20px;
   }
 }
@@ -248,11 +254,12 @@ html, body{
   /* background-image: url("../images/backgroundsidewalk.jpg");
   background-repeat:  no-repeat;
   background-size:  cover; */
-  background-color: white;
   flex-direction: column;
   text-align: center;
 }
 .services-only-container {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -262,6 +269,12 @@ html, body{
   padding-bottom: 70px;
 }
 /* individual container */
+.services-title {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
 .service {
   width: 100%;
   display: flex;
@@ -269,12 +282,12 @@ html, body{
   align-items: center;
   text-align: center;
   font-size: 20px;
-  color: #444444;
+  color: lightgrey;
 }
 .each-service-title {
   font-size: 18px;
   letter-spacing: .2em;
-  color: #007BAC;
+  
 }
 .icon {
   margin: 0 auto;
@@ -286,8 +299,14 @@ html, body{
   width: 55%;
   margin: 0 auto;
 }
-.service-icons {
-  color: #444444;
+.service-networking-icon {
+  color: #009CD1;
+}
+.service-sponsorship-icon {
+  color: #5E8196;
+}
+.service-management-icon {
+  color: #47B7B8;
 }
 
 @media screen and (min-width: 650px) {
@@ -396,7 +415,6 @@ html, body{
   text-align: center;
   padding-top: 70px;
   padding-bottom: 70px;
-  background: white;
 }
 .clients-container {
   display: flex;

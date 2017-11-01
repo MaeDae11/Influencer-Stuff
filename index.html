@@ -44,6 +44,9 @@
   <main>
     
     <!--*************** ABOUT ME SECTION ***************-->
+    <div class="top-section">
+
+    
     <section id="About" class="about-me-container">
       <div class="about-me-information">
         <h3 class="about-me-title">ABOUT</h3>
@@ -64,8 +67,6 @@
     <section id="Services" class="services-overall-container">
       <h3 class="services-title">SERVICES</h3>
       <div class="services-only-container">
-
-
         <!-- Networking -->
         <div class="service service-networking" data-dialog="networking">
           <div class="service-networking-icon icon">
@@ -155,44 +156,47 @@
       <div class="button-wrap hidden"><button data-dialog="management" class="trigger">Open Dialog</button></div>
     </section>
 
+        <!-- **************** CLIENTS SECTION  ***************** -->
+        <section id="Clients" class="clients-overall-container">
+            <h3 class="clients-title">CLIENTS</h3>
+            <div class="clients-container">
+              <div class="client"><img src="resources/images/logobattlefy.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logogggamer.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logoDSC.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logolootcrate.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logosteelseries.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logoclutch2.png" alt="client testing data"></div>
+              <div class="client haste"><img src="resources/images/logohaste.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logosoylent.png" alt="client testing data"></div>
+              <div class="client"><img src="resources/images/logoggesports.png" alt="client testing data"></div>
+            </div>
+          </section>
+  </div>
 
 
 
-    <!-- ***************  VIDEO SECTION  *************** -->
+
+
+
+
+        <!-- ***************  VIDEO SECTION  *************** -->
     <!-- will contain video when up and running -->
     <div id="Video" class="featured-video-container">
-      <div class="filter">
-        <h1 class="feature-video-title">Feature video coming soon</h1>
+        <div class="filter">
+          <h1 class="feature-video-title">Feature video coming soon</h1>
+        </div>
+        <video autoplay loop class="fillWidth">
+            <source src="resources/images/The-Alley.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
       </div>
-      <video autoplay loop class="fillWidth">
-          <source src="resources/images/The-Alley.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-      </video>
-    </div>
-    <!-- <section class="featured-video-container">
-      <div class="featured-video">
-
-      </div>
-      <div class="video-description"></div>
-        <p>
-      </div>
-    </section> -->
-
-    <!-- **************** CLIENTS SECTION  ***************** -->
-    <section id="Clients" class="clients-overall-container">
-      <h3 class="clients-title">CLIENTS</h3>
-      <div class="clients-container">
-        <div class="client"><img src="resources/images/logobattlefy.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logogggamer.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logoDSC.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logolootcrate.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logosteelseries.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logoclutch2.png" alt="client testing data"></div>
-        <div class="client haste"><img src="resources/images/logohaste.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logosoylent.png" alt="client testing data"></div>
-        <div class="client"><img src="resources/images/logoggesports.png" alt="client testing data"></div>
-      </div>
-    </section>
-
+      <!-- <section class="featured-video-container">
+        <div class="featured-video">
+  
+        </div>
+        <div class="video-description"></div>
+          <p>
+        </div>
+      </section> -->
     <!-- imports last 10 posts from instagram using API call in JS file -->
     <!-- right now has testing data until builds up instagram account -->
     <!-- <section class="personal-instagram-container">
@@ -217,7 +221,7 @@
     <section id="get-in-touch" class="contact-overall-section">
       <div class="contact-container">
         <h2 class="contact-title">Join our E-mail list for updates</h2>
-        <form name="form1" method="post" id="myform" action="NL-process.php">
+        <form name="form1" method="post" id="myform" >
           <div class="name-email-section">
             <div class="contact-name">
                 <label for="name">Name</label>
