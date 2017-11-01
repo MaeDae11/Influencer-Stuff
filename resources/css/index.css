@@ -492,7 +492,7 @@ html, body{
 /************************************************ */
 /* ************  CONTACT SECTION **************** */
 .contact-container {
-  background-image: url("../images/backgrounddarkbrick3-min.jpg");
+  background-image: url("../images/backgroundwallpaint-min.jpg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: bottom left;
@@ -615,7 +615,7 @@ textarea#message {
 .link-to-website {
   text-decoration: none;
   color: white;
-  padding: 20px;
+  padding-top: 20px;
   font-size: 13px;
 }
 .social-media-icons a{
