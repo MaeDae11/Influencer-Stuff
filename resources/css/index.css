@@ -61,6 +61,7 @@ html, body{
 .logo {
   font-family: 'Fredericka the Great', cursive;
   padding-left: 20px;
+  font-size: 18px;
 }
 .navigation-buttons {
   display: flex;
@@ -145,7 +146,6 @@ html, body{
   font-weight: 900;
   letter-spacing: .2em;
   color: #3D9BEB;
-  text-shadow: 1px 1px 0 #000;
 }
 @media screen and (min-width: 768px) {
 
@@ -179,7 +179,7 @@ html, body{
 /************************************************ */
 /* ***************  ABOUT ME SECTION  *********** */
 .about-me-container { 
-  background-image: url("../images/backgrounddarkbrick2.jpeg");
+  background-image: url("../images/backgrounddarkbrick3-min.jpg");
   background-repeat:  no-repeat;
   background-size:  cover;
   justify-content: space-around;
@@ -492,7 +492,7 @@ html, body{
 /************************************************ */
 /* ************  CONTACT SECTION **************** */
 .contact-container {
-  background-image: url("../images/backgroundpaperwall3.jpg");
+  background-image: url("../images/backgrounddarkbrick3-min.jpg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: bottom left;
@@ -504,8 +504,9 @@ html, body{
   justify-content: center;
   align-items: center;
 }
-
-
+.contact-title {
+  color: white;
+}
 .contact-name,
 .contact-email,
 .contact-message {
@@ -519,6 +520,7 @@ html, body{
 }
 .name-email-section {
   display: flex;
+  flex-direction: column;
 }
 .contact-name input,
 .contact-email input {
@@ -557,18 +559,48 @@ textarea#message {
   border: 2px solid #3D9BEB;
   color: #3D9BEB;
 }
-
+@media screen and (min-width: 700px) {
+  .contact-name,
+  .contact-email,
+  .contact-message { 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color:white;
+  }
+  .name-email-section {
+    flex-direction: row;
+  }
+  .contact-name input,
+  .contact-email input {
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  textarea#message {
+    font-size: 16px;
+    margin-top: 20px;
+    height: 200px;
+  }
+  .contact-send-button button {
+    padding: 12px 23px;
+    border-radius: 30px;
+    font-size: 13px;
+  }
+}
 
 
 /************************************************ */
 /* ************  FOOTER SECTION  **************** */
 
 .footer-container {
-  background-image: url("../images/backgrounddarkbrick2.jpeg");
+  /* background-image: url("../images/backgrounddarkbrick3-min.jpg");
   background-repeat:  no-repeat;
-  background-size:  cover;
-  height: 175px;
-  background-color: black;
+  background-size:  cover; */
+  height: 200px;
+  background-color: rgba(16, 19, 22, .95);
   color: white;
   letter-spacing: .20em;
   font-size: 12px;
@@ -583,6 +615,8 @@ textarea#message {
 .link-to-website {
   text-decoration: none;
   color: white;
+  padding: 20px;
+  font-size: 13px;
 }
 .social-media-icons a{
   text-decoration: none;
@@ -614,14 +648,19 @@ textarea#message {
 .social-media-icons {
   padding-bottom: 30px;
 }
+.influencer-stuff-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 650px) {
   .footer-container {
+    height: 300px;
     font-size: 14px;
   }
 }
 @media screen and (min-width: 984px) {
   .footer-container {
-    height: 250px;
     font-size: 16px;
   }
 }
@@ -633,7 +672,7 @@ textarea#message {
 
 
 
-/* Modal Popup */
+/* Modal Popup animations */
 button {
 	padding: 1em 2em;
 	outline: none;
