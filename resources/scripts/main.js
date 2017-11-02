@@ -241,3 +241,7 @@ window.DialogFx = DialogFx;
 
 
 // prevents page from refresh when submit email form
+$('#submit').click((event) => {
+    console.log(event)
+    event.preventdefault();
+})

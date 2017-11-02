@@ -1,6 +1,5 @@
 <?php
-// SENDBLASTER.com
-//http://www.sendblaster.com/en/support/lists-importing/single-opt-php-form-mail 
+
 // Hello! welcome to the settings page.
 // Here's your two steps guide:
 
@@ -9,11 +8,14 @@
 // (the same that SendBlaster uses in Manage Subscriptions Section)
 // ... please pay attention to the  ' ' apostrophes, they must remain around the email address.
 
-$emailmanager = 'katherinelane11@gmail.com';
+$emailmanager = 'poqito90@gmail.com';
 
 // SECOND:
 // save this file, and close it. Thank you!
+
+
 error_reporting(0);
+
 
 $msg = '';
 foreach ($_POST as $k => $v) { $msg .= $k.': '.$v."\n"; }
@@ -42,4 +44,6 @@ if ($Ok) {
 	</script>
 	<?
 }
+
+
 ?>
