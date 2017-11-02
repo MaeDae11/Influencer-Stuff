@@ -1,5 +1,9 @@
+// ***************** VIDEO CODE *********************
 //jQuery is required to run this code
-// runs video
+// code came with free video 
+// video is better scalable with these features attached
+// this video is made to be a background video
+// temporary code, will likely change once have actual featured video, depending on content
 $(".description-networking").hide()
 $( document ).ready(function() {
     
@@ -44,9 +48,14 @@ function scaleBannerVideoSize(element){
         $('.overall-video-container .featured-ideo-container video').addClass('fadeIn animated');
     });
 }
+// ****************** END OF VIDEO ****************
 
 
 
+
+
+// ************************************************    
+// ***** original popup box for services container ******* 
 // servicesDescriptionOpen = () => {
 //     $(".service-networking-icon").click((event) => {
 //         console.log("clicking")
@@ -103,7 +112,6 @@ function scaleBannerVideoSize(element){
 //     }
 // })
 
-
 // openModal();
 // closeModalThroughX();
 
@@ -114,14 +122,12 @@ function scaleBannerVideoSize(element){
 
 
 
-/**
- * dialog box v0.1
- * Ashwin Saxena
- */
+// ************ POPUP SERVICES BOXES *****************
 ;( function( window ) {
 
 'use strict';
-// checks to see if animation is supported
+// checks to see if animation is supported in browser with Modernizer
+// Mondernizr is imported through CDN on bottom of main page of HTML
 var support = { animations : Modernizr.cssanimations },
     animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
     animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
@@ -183,6 +189,7 @@ DialogFx.prototype._initEvents = function() {
 DialogFx.prototype.toggle = function() {
     var self = this;
     if( this.isOpen ) {
+        // classie is outside library for ease of adding and removing classes. imported with CDN within HTML
         classie.remove( this.el, 'dialog--open' );
         classie.add( self.el, 'dialog--close' );
         onEndAnimation( this.el.querySelector( '.dialog__content' ), function() {
@@ -206,6 +213,10 @@ window.DialogFx = DialogFx;
 })( window );
 
 /* calls function to bind click to trigger */
+// creates three separate triggers for three separate services
+// when corresponding data-dialog is clicked, a new DialogFX is created with the content in HTML that was originally hidden
+// triggers CSS keyframes to create animation and greyed out background
+// sets JavaScript function so X and outside of popup can be clicked to exit out
 (function() {
     var networkingTrigger = document.querySelector( '[data-dialog="networking"]' ),
         networking = document.getElementById( networkingTrigger.getAttribute( 'data-dialog' ) ),
@@ -224,3 +235,9 @@ window.DialogFx = DialogFx;
     managementTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 })();
     
+// ************* END OF POPUP BOXES  ***************
+
+
+
+
+// prevents page from refresh when submit email form
