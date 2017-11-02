@@ -524,7 +524,7 @@ html, body{
 }
 .contact-name input,
 .contact-email input,
-.contact-who input {
+.contact-who select {
   height: 40px;
   width: 300px;
   border-radius: 4px;
@@ -575,7 +575,7 @@ textarea#message {
   }
   .contact-name input,
   .contact-email input,
-  .contact-who input {
+  .contact-who select {
     height: 40px;
     width: 300px;
     font-size: 16px;

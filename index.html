@@ -226,7 +226,10 @@
             </div>
             <div class="contact-who">
                 <label for="surname">Who</label>
-                <input name="surname" type="text" class="text" id="surname" value="" maxlength="50" required/>
+                <select for="surname">
+                  <option name="surname" type="text" class="text" id="surname" value="Sponsor" required>Sponsor</option>
+                  <option name="surname" type="text" class="text" id="surname" value="Influencer" required>Influencer</option>
+                </select> 
             </div>
           </div>
           <!-- <div class="contact-message">
@@ -234,7 +237,7 @@
               <textarea name="message_html" id="message" rows="6" maxlength="200" placeholder="Please write a message and stay in contact about Influencer Stuff's new features." ></textarea>
           </div> -->
           <div class="contact-send-button">
-            <input type="submit" name="Submit" value="Send" class="btn"></input>
+            <input type="submit" name="Submit" value="Send" class="btn submit" id="submit"></input>
           </div>
         </form>
       </div>
@@ -260,12 +263,12 @@
 
   </footer>
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- modinizer to check if things are up to date -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!-- classie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
   <!-- jQuery minified version-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Influencer Stuff JS file -->
   <script src="resources/scripts/main.js"></script>
   

@@ -4,7 +4,7 @@
 // video is better scalable with these features attached
 // this video is made to be a background video
 // temporary code, will likely change once have actual featured video, depending on content
-$(".description-networking").hide()
+
 $( document ).ready(function() {
     
     scaleVideoContainer();
@@ -241,7 +241,11 @@ window.DialogFx = DialogFx;
 
 
 // prevents page from refresh when submit email form
-$('#submit').click((event) => {
-    console.log(event)
-    event.preventdefault();
+
+$('#submit').click(function(event) {
+    event.preventDefault();
+    console.log("works")
+    alert('Thank you, your address was added to our Mailing List');
 })
+
+
