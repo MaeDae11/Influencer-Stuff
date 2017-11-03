@@ -390,7 +390,7 @@ html, body{
   align-items: center;
 }
 .feature-video-title {
-  background: rgba(97, 98, 99, 0.7);
+  background: rgba(0, 123, 172, 0.7);
   color: white;
   width: 100%;
   text-align: center;
@@ -506,7 +506,7 @@ html, body{
   align-items: center;
 }
 .contact-title {
-  color: #444444;
+  color: rgb(0, 123, 172);
 }
 .contact-name,
 .contact-email,

@@ -242,10 +242,10 @@ window.DialogFx = DialogFx;
 
 // prevents page from refresh when submit email form
 
-$('#submit').click(function(event) {
-    event.preventDefault();
-    console.log("works")
-    alert('Thank you, your address was added to our Mailing List');
-})
+// $('#submit').click(function(event) {
+//     event.preventDefault();
+//     console.log("works")
+//     alert('Thank you, your address was added to our Mailing List');
+// })
 
 

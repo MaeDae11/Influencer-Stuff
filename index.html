@@ -212,9 +212,38 @@
 
     <!--***************** Email Us Section *******************-->
     <section id="get-in-touch" class="contact-overall-section">
-      <div class="contact-container">
+        <form name="form1" method="post" action="NL-process.php">
+            <table border="0" cellpadding="10" cellspacing="5" class="tbmain">
+              <tr> 
+                <td class="left">E-mail:</td>
+                <td><input name="email" type="text" class="text"></td>
+              </tr>
+              <tr> 
+                <td class="left">Name:</td>
+                <!--   PLEASE NOTICE THAT ANY SENBLASTER FIELD WILL BE FINE    -->
+              <!-- YOU CAN HAVE THE state or job or custom FIELDS HERE -->
+                <td><input name="name" type="text" id="name" class="text"></td>
+              </tr>
+              <tr> 
+                <td class="left">Surname:</td>
+                <td><input name="surname" type="text" id="surname" class="text"></td>
+              </tr>
+              <tr> 
+                <td class="left">City:</td>
+                <td><input name="city" type="text" id="city" class="text"></td>
+              </tr>
+              <tr> 
+                <td colspan="2"><p align="center"><span class="textsm"><a href="http://www.sendblaster.com/newsletter-software-no-recurring-fees/" title="newsletter software">Newsletter 
+                    software</a></span> 
+                    <input type="submit" name="Submit" value="Send" class="btn">
+                  </p>
+                  </td>
+              </tr>
+            </table>
+            </form>
+      <!-- <div class="contact-container">
         <h2 class="contact-title">Reach us here</h2>
-        <form name="form1" method="post" id="myform">
+        <form name="form1" method="post" id="myform" action="resources/scripts/NL-process.php">
           <div class="name-email-section">
             <div class="contact-name">
                 <label for="name">Name</label>
@@ -231,16 +260,16 @@
                   <option name="surname" type="text" class="text" id="surname" value="Influencer" required>Influencer</option>
                 </select> 
             </div>
-          </div>
+          </div> -->
           <!-- message container for future use -->
           <!-- <div class="contact-message">
               <label for="message">Message</label>
               <textarea name="message_html" id="message" rows="6" maxlength="200" placeholder="Please write a message and stay in contact about Influencer Stuff's new features." ></textarea>
           </div> -->
-          <div class="contact-send-button">
+          <!-- <div class="contact-send-button">
             <input type="submit" name="Submit" value="Send" class="btn submit" id="submit"></input>
-          </div>
-        </form>
+          </div> -->
+        <!-- </form> -->
       </div>
     </section>
   </main>
