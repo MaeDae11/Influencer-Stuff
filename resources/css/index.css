@@ -189,7 +189,7 @@ html, body{
 }
 .about-me-paragraph {
   display: flex;
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
   width: 80%;
 }
 .about-me-image {
@@ -208,13 +208,20 @@ html, body{
   .about-me-information {
     font-size: 16px;
     padding: 40px 100px;
-
   }
   /* *******  ABOUT ME  ********* */
   .about-me-paragraph {
-    display: unset;
-    text-align: left;
-    width: 80%;
+    /* display: unset;
+    text-align: left; */
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about-me-title {
+    text-align: center;
+  }
+  .about-column-one,
+  .about-column-two {
+    width: 45%;
   }
   .about-me-image img {
     float: left;
