@@ -717,7 +717,8 @@ button {
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
-	pointer-events: none;
+  pointer-events: none;
+  z-index: 20;
 }
 .dialog__overlay {
 	position: absolute;
