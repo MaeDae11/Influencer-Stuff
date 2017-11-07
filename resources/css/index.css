@@ -606,9 +606,6 @@ textarea#message {
 /* ************  FOOTER SECTION  **************** */
 
 .footer-container {
-  /* background-image: url("../images/backgrounddarkbrick3-min.jpg");
-  background-repeat:  no-repeat;
-  background-size:  cover; */
   height: 200px;
   background-color: rgba(16, 19, 22, .95);
   color: white;

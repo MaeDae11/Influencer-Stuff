@@ -249,3 +249,4 @@ window.DialogFx = DialogFx;
 // })
 
 
+AOS.init();
