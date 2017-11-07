@@ -48,6 +48,9 @@ html, body{
   background: rgba(16, 19, 22, 0.9);
   color: white;
 }
+.large-screen {
+  display: none;
+}
 .logo {
   font-family: 'Fredericka the Great', cursive;
   padding-left: 20px;
@@ -86,7 +89,14 @@ html, body{
     top: 0;
     width: 100%;
 }
-
+@media screen and (min-width: 764px) {
+  .mobile-screen {
+    display: none;
+  }
+  .large-screen {
+    display: unset;
+  }
+}
 @media screen and (min-width: 984px) {
   .influencer-title {
     font-size: 44px;
@@ -692,15 +702,15 @@ textarea#message {
 
 
 
-
-/* Modal Popup animations */
+/* ****************************************** */
+/* Modal Popup animations ONLY */
 button {
 	padding: 1em 2em;
 	outline: none;
 	font-weight: 600;
 	border: none;
 	color: #fff;
-	background: #c94e50;
+	background: #007BAC;
 }
 .dialog,
 .dialog__overlay {
@@ -804,6 +814,9 @@ button {
 .dialog.dialog--open button {
 	-webkit-animation: anim-elem-2 0.7s ease-out both;
 	animation: anim-elem-2 0.7s ease-out both;
+}
+.dialog.dialog--open button:hover {
+  cursor: pointer;
 }
 @keyframes anim-dash {
 	0% {

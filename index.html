@@ -23,20 +23,28 @@
     <div class="logo">
       <span>INFLUENCER STUFF</span>
     </div>
-    <div class="navigation-buttons">
+    <!-- desktop / ipad navigation -->
+    <div class="navigation-buttons large-screen">
       <a href="#">Home</a>
       <a href="#About">About</a>
       <a href="#Services">Service</a>
       <a href="#Clients">Clients</a>
       <a href="#Contact">Contact</a>
     </div>
-    <!-- <div class="navigation-buttons">
+    <!-- mobile navigation -->
+    <div class="mobile-screen">
+      <div>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+
+      </div>
+      <div class="">
         <a href="#">Home</a>
         <a href="#About">About</a>
         <a href="#Services">Service</a>
         <a href="#Clients">Clients</a>
         <a href="#Contact">Contact</a>
-      </div> -->
+      </div>
+    </div>
   </nav>
   <!-- header section with background image -->
   <header class="banner-container">
@@ -252,7 +260,8 @@
             </form> -->
       <div id="Contact" class="contact-container">
         <h2 class="contact-title">Reach us here</h2>
-        <form name="form1" method="post" id="myform" action="resources/scripts/NL-process.php">
+        <!-- <form name="form1" method="post" id="myform" action="resources/scripts/NL-process.php"> -->
+        <form name="form1" method="post" id="myform">
           <div class="name-email-section">
             <div class="contact-name">
                 <label for="name">Name</label>
