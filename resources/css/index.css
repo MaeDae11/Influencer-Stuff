@@ -128,8 +128,14 @@ html, body{
 .about-me-container,
 .services-overall-container,
 .personal-instagram-container {
-  min-height: 600px;
   display: flex;
+}
+.about-me-container,
+.services-overall-container,
+.clients-overall-container,
+.personal-instagram-container {
+  min-height: 600px;
+  padding-top: 75px;
 }
 
 .contact-title, 
@@ -143,7 +149,12 @@ html, body{
   color: #007BAC;
 }
 @media screen and (min-width: 768px) {
-
+  .about-me-container,
+  .services-overall-container,
+  .clients-overall-container,
+  .personal-instagram-container {
+    padding-top: 150px;
+  }
 }
 @media screen and (min-width: 984px) {
   .contact-title, 
@@ -174,11 +185,7 @@ html, body{
 /* ***************  ABOUT ME SECTION  *********** */
 
 .about-me-container { 
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 40px;
+  text-align: center;
 }
 .about-me-information {
   background-color: rgba(255, 255, 255, 0.8);
@@ -189,8 +196,11 @@ html, body{
 }
 .about-me-paragraph {
   display: flex;
-  /* flex-direction: column-reverse; */
+  flex-direction: column;
   width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .about-me-image {
   width: 90%;
@@ -213,6 +223,7 @@ html, body{
   .about-me-paragraph {
     /* display: unset;
     text-align: left; */
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
   }
@@ -260,7 +271,6 @@ html, body{
 .services-overall-container {
   flex-direction: column;
   text-align: center;
-  padding-bottom: 70px;
 }
 .services-only-container {
   margin: 0 auto;

@@ -248,5 +248,5 @@ window.DialogFx = DialogFx;
 //     alert('Thank you, your address was added to our Mailing List');
 // })
 
-
+// https://michalsnik.github.io/aos/
 AOS.init();
