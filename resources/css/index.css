@@ -338,6 +338,28 @@ html, body{
   transition: all .75s ease-in-out;
 }
 .each-service-title {
+  background: rgba(255, 255, 255, 0.8);
+}
+.service-networking {
+  background: url("../images/service-networking.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: center center;
+}
+.service-sponsorship {
+  background: url("../images/service-sponsorship.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: center center;
+}
+.service-management {
+  background: url("../images/service-management.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: center center;
+}
+
+.each-service-title {
   font-size: 18px;
   letter-spacing: .2em;
 }
