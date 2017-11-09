@@ -327,6 +327,7 @@ html, body{
   padding: 40px 0;
 }
 .service {
+  padding: 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -343,8 +344,9 @@ html, body{
 /* applies small zoom to entire service container to further showcase that each section is clickable */
 .service:hover {
   cursor: pointer;
-  transform: scale(1.1);
-  transition: all .75s ease-in-out
+  background: rgba(117, 43, 255, 0.8);
+  color: white;
+  transition: all .75s ease-in-out;
 }
 .icon {
   margin: 0 auto;
