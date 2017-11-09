@@ -250,3 +250,20 @@ $('#submit').click(function(event) {
 
 // https://michalsnik.github.io/aos/
 AOS.init();
+
+// dropdown menu for mobile
+$(".open-nav").click(function(event){
+    event.preventDefault();
+    $('.open-nav').hide();
+    $('.close-nav').show();
+    $('.navigation-dropdown').slideDown("slow");
+})
+$('.close-nav').click(function(event){
+    event.preventDefault();
+    $('.close-nav').hide();
+    $('.open-nav').show();
+    $('.navigation-dropdown').slideUp("slow");
+})
+
+$(".close-nav").hide();
+$(".navigation-dropdown").hide();

@@ -48,53 +48,76 @@ html, body{
   background: rgba(16, 19, 22, 0.9);
   color: white;
 }
-.large-screen {
-  display: none;
-}
 .logo {
   font-family: 'Fredericka the Great', cursive;
   padding-left: 20px;
   font-size: 18px;
 }
-.navigation-buttons {
-  display: flex;
+.navigation-buttons.large-screen {
+  display: none;
 }
-.navigation-buttons a {
+.open-close-nav {
+  padding-right: 20px;
+}
+.navigation-dropdown {
+  background: rgba(16, 19, 22, .95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 50px;
+  width: 100%;
+  z-index: 48;
+}
+.navigation-dropdown a {
   text-decoration: none;
-  color: white;
-  padding: 10px;
-  -webkit-transition: color .5s ease;
-  -moz-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease;
+  color: white; 
+  padding-left: 40px;
+}
+.navigation-dropdown div {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.navigation-dropdown div:hover {
+  cursor: pointer;
+  background: #007BAC;
 }
 
-/* hover effect of underlining navigation words */
-.navigation-buttons a:after{
-    border: 1px solid black;
-    color: white;
-    bottom: 0px;
-    content: " ";
-    display: block;
-    transition: all 280ms ease-in-out;
-    width: 0;
-}
-.navigation-buttons a:hover:after{
-    border-color:#007BAC;
-    transition: width 350ms ease-in-out;
-    width: 100%;
-}
-.navigation-buttons a:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 100%;
-}
 @media screen and (min-width: 764px) {
   .mobile-screen {
     display: none;
   }
-  .large-screen {
-    display: unset;
+  .navigation-buttons.large-screen {
+    display: flex;
+  }
+
+  .navigation-buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+  }
+  /* hover effect of underlining navigation words */
+  .navigation-buttons a:after{
+      border: 1px solid black;
+      color: white;
+      bottom: 0px;
+      content: " ";
+      display: block;
+      transition: all 280ms ease-in-out;
+      width: 0;
+  }
+  .navigation-buttons a:hover:after{
+      border-color:#007BAC;
+      transition: width 350ms ease-in-out;
+      width: 100%;
+  }
+  .navigation-buttons a:hover:before {
+      bottom: auto;
+      top: 0;
+      width: 100%;
   }
 }
 @media screen and (min-width: 984px) {
