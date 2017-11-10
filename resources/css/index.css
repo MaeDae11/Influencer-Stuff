@@ -658,7 +658,7 @@ textarea#message {
   .contact-name,
   .contact-email,
   .contact-who { 
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -666,13 +666,15 @@ textarea#message {
   }
   .name-email-section {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .contact-name input,
   .contact-email input,
   .contact-who select {
-    height: 40px;
+    height: 30px;
     width: 300px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 20px;
   }
   /* if add in message area */
@@ -685,6 +687,26 @@ textarea#message {
     padding: 12px 23px;
     border-radius: 30px;
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .name-email-section {
+    flex-direction: row;
+  }
+  .contact-name,
+  .contact-email,
+  .contact-who { 
+    font-size: 20px;
+  }
+  .name-email-section {
+    flex-direction: column;
+  }
+  .contact-name input,
+  .contact-email input,
+  .contact-who select {
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
   }
 }
 
