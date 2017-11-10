@@ -151,7 +151,7 @@ html, body{
 /************************************************ */
 /* ********************** BODY OF WEBSITE ********************/
 .top-section {
-  background-image: url("../images/backgroundstairs.jpg");
+  background-image: url("../images/backgroundstairsblue.jpg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: center center;
@@ -340,19 +340,19 @@ html, body{
   background: rgba(255, 255, 255, 0.8);
 }
 .service-networking {
-  background: url("../images/service-networking.jpg");
+  background: url("../images/service-networking2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: center center;
 }
 .service-sponsorship {
-  background: url("../images/service-sponsorship.jpg");
+  background: url("../images/service-sponsorship2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: center center;
 }
 .service-management {
-  background: url("../images/service-management.jpg");
+  background: url("../images/service-management2.jpeg");
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: center center;
@@ -365,7 +365,7 @@ html, body{
 /* applies small zoom to entire service container to further showcase that each section is clickable */
 .service:hover {
   cursor: pointer;
-  background: rgba(117, 43, 255, 0.8);
+  background: rgba(2, 74, 255, 0.7);
   transition: all .75s ease-in-out;
 }
 .icon {
