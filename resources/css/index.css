@@ -106,11 +106,17 @@ html, body{
       bottom: 0px;
       content: " ";
       display: block;
+      -webkit-transition: all 280ms ease-in-out;
+      -moz-transition: all 280ms ease-in-out;
+      -o-transition: all 280ms ease-in-out;
       transition: all 280ms ease-in-out;
       width: 0;
   }
   .navigation-buttons a:hover:after{
       border-color:#007BAC;
+      -webkit-transition: width 350ms ease-in-out;
+      -moz-transition: width 350ms ease-in-out;
+      -o-transition: width 350ms ease-in-out;
       transition: width 350ms ease-in-out;
       width: 100%;
   }
@@ -333,8 +339,11 @@ html, body{
   align-items: center;
   text-align: center;
   font-size: 20px;
-  color: #444444;
+  color: white;
   border-bottom: .75px solid #444444;
+  -webkit-transition: all .75s ease-in-out;
+  -moz-transition: all .75s ease-in-out;
+  -o-transition: all .75s ease-in-out;
   transition: all .75s ease-in-out;
 }
 .service-networking {
@@ -359,15 +368,18 @@ html, body{
 .each-service-title {
   font-size: 18px;
   letter-spacing: .2em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgba(50, 50, 50, 1);
   width: 100%;
 }
 /* applies small zoom to entire service container to further showcase that each section is clickable */
 .service:hover {
   cursor: pointer;
   background: rgba(2, 74, 255, 0.7);
+  -webkit-transition: all .75s ease-in-out;
+  -moz-transition: all .75s ease-in-out;
+  -o-transition: all .75s ease-in-out;
   transition: all .75s ease-in-out;
 }
 .icon {
@@ -785,8 +797,10 @@ button {
 	position: absolute;
 	z-index: 1;
 	background: rgba(55, 58, 71, 0.9);
-	opacity: 0;
+  opacity: 0;
 	-webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 	-webkit-backface-visibility: hidden;
 }
@@ -817,11 +831,15 @@ button {
 	margin: 0;
 }
 .dialog--open .dialog__overlay {
-	-webkit-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
 .dialog--close .dialog__overlay {
-	-webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
 .dialog__content {
@@ -846,6 +864,8 @@ button {
 }
 .dialog--open .morph-shape svg rect {
 	-webkit-animation: anim-dash 0.6s forwards;
+	-moz-animation: anim-dash 0.6s forwards;
+	-o-animation: anim-dash 0.6s forwards;
 	animation: anim-dash 0.6s forwards;
 }
 .dialog-inner {
@@ -856,14 +876,20 @@ button {
 	padding: 4em;
 	opacity: 1;
 	-webkit-transition: opacity 0.85s 0.35s;
+	-moz-transition: opacity 0.85s 0.35s;
+	-o-transition: opacity 0.85s 0.35s;
 	transition: opacity 0.85s 0.35s;
 }
 .dialog.dialog--open h2 {
 	-webkit-animation: anim-elem-1 0.7s ease-out both;
+	-moz-animation: anim-elem-1 0.7s ease-out both;
+	-o-animation: anim-elem-1 0.7s ease-out both;
 	animation: anim-elem-1 0.7s ease-out both;
 }
 .dialog.dialog--open button {
-	-webkit-animation: anim-elem-2 0.7s ease-out both;
+  -webkit-animation: anim-elem-2 0.7s ease-out both;
+  -moz-animation: anim-elem-2 0.7s ease-out both;
+	-o-animation: anim-elem-2 0.7s ease-out both;
 	animation: anim-elem-2 0.7s ease-out both;
 }
 .dialog.dialog--open button:hover {
