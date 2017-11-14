@@ -382,6 +382,19 @@ html, body{
   -o-transition: all .75s ease-in-out;
   transition: all .75s ease-in-out;
 }
+.learn-more {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.learn-more:hover {
+  color: #18222b;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
 .icon {
   margin: 0 auto;
 }

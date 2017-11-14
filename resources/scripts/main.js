@@ -257,13 +257,34 @@ $(".open-nav").click(function(event){
     $('.open-nav').hide();
     $('.close-nav').show();
     $('.navigation-dropdown').slideDown("slow");
-})
+});
 $('.close-nav').click(function(event){
     event.preventDefault();
     $('.close-nav').hide();
     $('.open-nav').show();
     $('.navigation-dropdown').slideUp("slow");
-})
+});
 
+$('.hidden-before-hover').hide();
 $(".close-nav").hide();
 $(".navigation-dropdown").hide();
+
+
+// on hover to show button and one liner within services section
+onHover = (typeOfService, hidden) => {
+    hidden.hide();
+    typeOfService.hover(
+        function() {
+            hidden.show();
+        },
+        function() {
+            hidden.hide();
+        }
+    )
+} 
+onHover($('.service-management'), $('.hidden-management'));
+onHover($('.service-networking'), $('.hidden-network'));
+onHover($('.service-sponsorship'), $('.hidden-sponsor'))
+
+
+
