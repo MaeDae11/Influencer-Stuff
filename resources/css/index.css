@@ -630,7 +630,22 @@ html, body{
   font-size: 16px;
   margin-top: 20px;
   border: 2px solid #444444;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
+.contact-name input:focus,
+.contact-email input:focus,
+.contact-who select:focus {
+  outline: none;
+  border-color: #B62B90;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
 textarea#message {
   font-size: 16px;
   margin-top: 20px;
@@ -657,8 +672,8 @@ textarea#message {
   transition: all .5s ease;
 }
 .contact-send-button input:hover {
-  border: 2px solid #007BAC;
-  color: #007BAC;
+  border: 2px solid #B62B90;
+  color: #B62B90;
 }
 @media screen and (min-width: 700px) {
   .contact-name,
