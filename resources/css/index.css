@@ -346,34 +346,8 @@ html, body{
   -o-transition: all .75s ease-in-out;
   transition: all .75s ease-in-out;
 }
-.service-networking {
-  background: url("../images/service-networking2.jpeg");
-  background-repeat:  no-repeat;
-  background-size:  cover;
-  background-position: center center;
-}
-.service-sponsorship {
-  background: url("../images/service-sponsorship2.jpeg");
-  background-repeat:  no-repeat;
-  background-size:  cover;
-  background-position: center center;
-}
-.service-management {
-  background: url("../images/service-management2.jpeg");
-  background-repeat:  no-repeat;
-  background-size:  cover;
-  background-position: center center;
-}
-
-.each-service-title {
-  font-size: 18px;
-  letter-spacing: .2em;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: rgba(50, 50, 50, 1);
-  width: 100%;
-}
-/* applies small zoom to entire service container to further showcase that each section is clickable */
+/* hover effect causing background image to disapear and be replaced with bright blue */
+/* additional hover effects within main.js to regulate spans that are above and below the service title */
 .service:hover {
   cursor: pointer;
   background: rgba(2, 74, 255, 0.7);
@@ -395,15 +369,42 @@ html, body{
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-.icon {
-  margin: 0 auto;
+
+.service-networking,
+.service-management,
+.service-sponsorship {
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position: center center;
 }
+.service-networking {
+  background: url("../images/service-networking2.jpeg");
+}
+.service-sponsorship {
+  background: url("../images/service-sponsorship2.jpeg");
+}
+.service-management {
+  background: url("../images/service-management2.jpeg");
+}
+
+.each-service-title {
+  font-size: 18px;
+  letter-spacing: .2em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: rgba(50, 50, 50, 1);
+  width: 100%;
+}
+
+/* ***** used when did not have background images and had favicon icons instead */
+/* .icon {
+  margin: 0 auto;
+} 
 .summary {
   width: 100%;
-
 }
 /* different icon colors */
-.service-networking-icon {
+/* .service-networking-icon {
   color: #009CD1;
 }
 .service-sponsorship-icon {
@@ -411,7 +412,7 @@ html, body{
 }
 .service-management-icon {
   color: #47B7B8;
-}
+} */
 
 @media screen and (min-width: 650px) {
   .service {
@@ -421,9 +422,6 @@ html, body{
 @media screen and (min-width: 840px) {
   .services-overall-container {
     justify-content: center;
-  }
-  .service h3 {
-    margin: 0;
   }
   .service {
     display: flex;
@@ -441,18 +439,16 @@ html, body{
     width: 100%;
     padding: 10px;
   }
-  .icon {
+  /* .icon {
     margin: 0;
   }
   .summary {
     width: 100%;
     margin: 0;
-  }
+  } */
 }
 @media screen and (min-width: 1100px) {
-  /* ********* SERVICES ********* */
   .service {
-    
     font-size: 22px;
   }
   .each-service-title {
@@ -550,9 +546,6 @@ html, body{
   padding-right: 40px;
   padding-left: 40px;
 }
-.client img:hover {
-  
-}
 @media screen and (min-width: 764px) {
   .client img {
     width: 200px;
@@ -565,7 +558,6 @@ html, body{
     max-height: 100px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .client img {
     padding: 50px;
@@ -576,6 +568,7 @@ html, body{
 
 /************************************************ */
 /* ************  INSTAGRAM SECTION  ************ */
+/*  Is not currently being displayed on site as client's instagram is not up and running */
 .personal-instagram-container {
   text-align: center;
   align-content: center;
@@ -710,9 +703,6 @@ textarea#message {
   .contact-email,
   .contact-who { 
     font-size: 20px;
-  }
-  .name-email-section {
-    flex-direction: column;
   }
   .contact-name input,
   .contact-email input,
