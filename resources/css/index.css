@@ -173,7 +173,7 @@ html, body{
 .services-overall-container,
 .clients-overall-container,
 .personal-instagram-container {
-  min-height: 600px;
+  /* min-height: 600px; */
   padding-top: 75px;
 }
 
@@ -210,7 +210,7 @@ html, body{
   .services-overall-container,
   .clients-overall-container,
   .personal-instagram-container {
-    min-height: 700px;
+    padding-top: 250px;
   }
   .contact-title,
   .about-me-title,
@@ -233,6 +233,10 @@ html, body{
   color: #444444;
   font-size: 18px;
   letter-spacing: .1em;
+}
+.about-me-title {
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 .about-me-paragraph {
   display: flex;
@@ -260,7 +264,6 @@ html, body{
     font-size: 16px;
     padding: 40px 100px;
   }
-  /* *******  ABOUT ME  ********* */
   .about-me-paragraph {
     /* display: unset;
     text-align: left; */
@@ -271,6 +274,7 @@ html, body{
     justify-content: space-between;
   }
   .about-me-title {
+    padding-top: 30px;
     text-align: center;
   }
   .about-column-one,
@@ -430,14 +434,13 @@ html, body{
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
   }
   .each-service-title {
     font-size: 23px;
     width: 100%;
     padding: 10px;
   }
-
   .summary {
     width: 100%;
     margin: 0;
@@ -554,6 +557,9 @@ html, body{
     max-height: 100px;
   }
 }
+.clients-overall-container {
+  margin-bottom: 250px;
+}
 @media screen and (min-width: 1200px) {
   .client img {
     padding: 50px;
@@ -601,13 +607,15 @@ html, body{
   align-items: center;
 }
 .contact-title {
+  padding-top: 40px;
+  padding-bottom: 30px;
   color: rgb(0, 123, 172);
 }
 .contact-name,
 .contact-email,
 .contact-who {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   padding: 20px;
