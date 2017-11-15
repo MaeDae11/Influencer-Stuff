@@ -182,6 +182,7 @@ html, body{
 .clients-title, 
 .instagram-title,
 .services-title  {
+  margin: 0;
   font-size: 28px;
   font-weight: 800;
   letter-spacing: .2em;
