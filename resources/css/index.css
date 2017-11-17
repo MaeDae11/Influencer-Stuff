@@ -41,7 +41,7 @@ html, body{
   align-items: center;
   height: 50px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   z-index: 50;
   top: 0;
   left: 0;
@@ -182,11 +182,12 @@ html, body{
 .clients-title, 
 .instagram-title,
 .services-title  {
+  /* font-family: 'Slabo 27px', serif; */
   margin: 0;
   font-size: 28px;
   font-weight: 800;
-  letter-spacing: .2em;
-  color: #007BAC;
+  letter-spacing: .1em;
+  color: #000;
 }
 @media screen and (min-width: 768px) {
   .about-me-container,
@@ -217,7 +218,7 @@ html, body{
   .clients-title,
   .instagram-title,
   .services-title  {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 
@@ -228,7 +229,7 @@ html, body{
   text-align: center;
 }
 .about-me-information {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, .9);
   width: 100%;
   color: #444444;
   font-size: 18px;
@@ -321,7 +322,7 @@ html, body{
 }
 .services-only-container {
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -332,9 +333,10 @@ html, body{
 }
 /* individual container */
 .services-title {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
-  padding: 40px 0;
+  padding-top: 40px;
+  
 }
 .service {
   width: 100%;
@@ -366,6 +368,7 @@ html, body{
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
+/* bold hidden-network */
 .learn-more:hover {
   color: #18222b;
   -webkit-transition: all .5s ease-in-out;
@@ -481,7 +484,7 @@ html, body{
 .featured-video-container .filter {
   z-index: 20;
   position: absolute;
-  background: rgba(140, 140, 140, 0.6);
+  /* background: rgba(140, 140, 140, 0.6); */
   width: 100%;
   height: 100%;
 }
@@ -492,7 +495,7 @@ html, body{
 }
 .feature-video-title {
   background: rgba(255, 255, 255, 0.7);
-  color: #007BAC;
+  /* color: #007BAC; */
   width: 100%;
   text-align: center;
   font-weight: 400;
@@ -518,7 +521,7 @@ html, body{
   margin-bottom: 200px;
 }
 .clients-container {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -527,7 +530,7 @@ html, body{
   padding-bottom: 50px;
 }
 .clients-title {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding-bottom: 50px;
   padding-top: 50px;
   margin: 0;
@@ -609,7 +612,7 @@ html, body{
 .contact-title {
   padding-top: 40px;
   padding-bottom: 30px;
-  color: rgb(0, 123, 172);
+  /* color: rgb(0, 123, 172); */
 }
 .contact-name,
 .contact-email,
