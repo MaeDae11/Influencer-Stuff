@@ -177,7 +177,7 @@ html, body{
 }
 .about-me-container,
 .services-overall-container,
-.clients-overall-container,
+/* .clients-overall-container, */
 .personal-instagram-container {
   /* min-height: 600px; */
   padding-top: 75px;
@@ -194,11 +194,12 @@ html, body{
   font-weight: 800;
   letter-spacing: .1em;
   color: #000;
+  font-family: 'Fredericka the Great', cursive;
 }
 @media screen and (min-width: 768px) {
   .about-me-container,
   .services-overall-container,
-  .clients-overall-container,
+  /* .clients-overall-container, */
   .personal-instagram-container {
     padding-top: 150px;
   }
@@ -215,7 +216,7 @@ html, body{
 @media screen and (min-width: 1200px) {
   .about-me-container,
   .services-overall-container,
-  .clients-overall-container,
+  /* .clients-overall-container, */
   .personal-instagram-container {
     padding-top: 80px;
   }
@@ -329,7 +330,7 @@ html, body{
   width: 100%;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
 }
 /* individual container */
 .services-title {
@@ -395,7 +396,8 @@ html, body{
 .service-networking,
 .service-management,
 .service-sponsorship,
-.sercice-coming-soon {
+.service-coming-soon {
+  opacity: .8;
   background-repeat:  no-repeat;
   background-size:  cover;
   background-position: center center;
@@ -442,7 +444,7 @@ html, body{
     flex-direction: row;
     flex-wrap: nowrap;
     padding-top: 70px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
   }
   .each-service-title {
     font-size: 23px;
@@ -526,7 +528,7 @@ html, body{
   text-align: center;
 }
 .clients-container {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #10407D;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -535,10 +537,11 @@ html, body{
   padding-bottom: 50px;
 }
 .clients-title {
-  background-color: rgba(255, 255, 255, 0.9);
-  padding-bottom: 50px;
-  padding-top: 50px;
+  background-color: #10407D;
+  padding-bottom: 70px;
+  padding-top: 150px;
   margin: 0;
+  color: #ffffff;
 }
 .client img {
   width: 200px;
