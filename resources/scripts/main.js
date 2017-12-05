@@ -284,7 +284,8 @@ onHover = (typeOfService, hidden) => {
 } 
 onHover($('.service-management'), $('.hidden-management'));
 onHover($('.service-networking'), $('.hidden-network'));
-onHover($('.service-sponsorship'), $('.hidden-sponsor'))
+onHover($('.service-sponsorship'), $('.hidden-sponsor'));
+onHover($('.service-coming-soon'), $('.hidden-coming-soon'))
 
 
 

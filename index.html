@@ -64,6 +64,8 @@
     
     <!--*************** ABOUT ME SECTION ***************-->
     <div class="top-section">
+    <div class="content-section">
+
     
     <section id="About" class="about-me-container">
       <div class="about-me-information">
@@ -91,8 +93,10 @@
     <section id="Services" class="services-overall-container">
       <h3 class="services-title">Our Services</h3>
       <div class="services-only-container">
-        
-        <!-- Networking -->
+
+
+        <div class="first-set-services">
+        <!-- **************** Networking *************** -->
         <div class="service service-networking" data-dialog="networking">
           <!-- <div class="service-networking-icon icon">
             <span class="service-icons"><i class="fa fa-connectdevelop fa-5x" aria-hidden="true"></i></span>
@@ -123,7 +127,7 @@
         <div class="button-wrap hidden"><button data-dialog="networking" class="trigger">Open Dialog</button></div>
 
         
-        <!-- Sponsorship -->
+        <!-- Sponsorship / Influencer Marketing-->
         <div class="service service-sponsorship" data-dialog="sponsorship">
           <!-- <div class="service-sponsorship-icon icon">
             <span class="service-icons"><i class="fa fa-users fa-5x" aria-hidden="true"></i></span>
@@ -151,9 +155,13 @@
         </div>
         <!-- Sponsorship - Not actual button that is pressed to bring up modal. MUST have button after section and hidden. Do not use the actual button to bring up modal, but still need it -->
         <div class="button-wrap hidden"><button data-dialog="sponsorship" class="trigger">Open Dialog</button></div>
+      </div>
 
 
-      <!-- Management -->
+
+      <div class="second-set-services">
+
+      <!-- ****************** Management *************** -->
         <div class="service service-management" data-dialog="management">
           <!-- <div class="service-management-icon icon">
             <span class="service-icons"><i class="fa fa-5x fa-calendar" aria-hidden="true"></i></span>
@@ -163,26 +171,55 @@
             <h3 class="each-service-title">MANAGEMENT</h3>
             <span class="hidden-management learn-more">Learn More</span>
           </div>
-        </div>
-      </div>
-      <!-- Management Modal -->
-      <div id="management" class="dialog dialog--close">
-        <div class="dialog__overlay"></div>
-        <div class="dialog__content">
-          <div class="morph-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
-              <rect x="3" y="3" fill="none" width="556" height="276"></rect>
-            </svg>
+        </div>  
+        <!-- Management Modal -->
+        <div id="management" class="dialog dialog--close">
+          <div class="dialog__overlay"></div>
+          <div class="dialog__content">
+            <div class="morph-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
+                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
+              </svg>
+            </div>
+            <div class="dialog-inner">
+              <span class="hidden-before-hover">Managing your time</span>
+              <h2><strong>Management</strong>, I'm a dialog box</h2>
+              <div><button class="action" data-dialog-close="a">Close</button></div>
+            </div>
           </div>
-          <div class="dialog-inner">
-            <span class="hidden-before-hover">Managing your time</span>
-            <h2><strong>Management</strong>, I'm a dialog box</h2>
-            <div><button class="action" data-dialog-close="a">Close</button></div>
+        </div>
+        <!-- Management - Not actual button that is pressed to bring up modal. MUST have button after section and hidden. Do not use the actual button to bring up modal, but still need it -->
+        <div class="button-wrap hidden"><button data-dialog="management" class="trigger">Open Dialog</button></div>
+
+        <!-- *************** COMING SOON ************** -->
+        <div class="service service-coming-soon" data-dialog="coming-soon">
+          <!-- <div class="service-coming-soon-icon icon">
+            <span class="service-icons"><i class="fa fa-users fa-5x" aria-hidden="true"></i></span>
+          </div> -->
+          <div class="service-coming-soon-summary summary">
+            <span class="hidden-coming-soon">Sign in features for additional management</span>
+            <h3 class="each-service-title">COMING SOON</h3>
+            <span class="hidden-coming-soon learn-more">Learn More</span>
           </div>
         </div>
+        <!-- coming-soon Modal -->
+        <div id="coming-soon" class="dialog dialog--close">
+          <div class="dialog__overlay"></div>
+          <div class="dialog__content">
+            <div class="morph-shape">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
+                <rect x="3" y="3" fill="none" width="556" height="276"></rect>
+              </svg>
+            </div>
+            <div class="dialog-inner">
+              <h2><strong>coming-soon</strong>, I'm a dialog box</h2>
+              <div><button class="action" data-dialog-close="a">Close</button></div>
+            </div>
+          </div>
+        </div>
+        <!-- coming-soon - Not actual button that is pressed to bring up modal. MUST have button after section and hidden. Do not use the actual button to bring up modal, but still need it -->
+        <div class="button-wrap hidden"><button data-dialog="coming-soon" class="trigger">Open Dialog</button></div>
       </div>
-      <!-- Management - Not actual button that is pressed to bring up modal. MUST have button after section and hidden. Do not use the actual button to bring up modal, but still need it -->
-      <div class="button-wrap hidden"><button data-dialog="management" class="trigger">Open Dialog</button></div>
     </section>
 
     <!-- **************** CLIENTS SECTION  ***************** -->
@@ -200,7 +237,7 @@
           <div class="client inner" data-aos="zoom-in-up" data-aos-duration="2500"><img src="resources/images/logoggesports.png" alt="client testing data"></div>
         </div>
       </section>
-
+    </div>
   </div>
   <!--***** end of top section with background taking up entiretly *****-->
 
