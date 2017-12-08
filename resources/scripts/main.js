@@ -233,6 +233,12 @@ window.DialogFx = DialogFx;
         dlg = new DialogFx( management );
         console.log(dlg)
     managementTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
+    
+    var comingSoonTrigger = document.querySelector( '[data-dialog="service-coming-soon"]' ),
+      comingSoon = document.getElementById( comingSoonTrigger.getAttribute( 'data-dialog' ) ),
+      dlg = new DialogFx( comingSoon );
+      console.log(dlg)
+    comingSoonTrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
 })();
     
 // ************* END OF POPUP BOXES  ***************

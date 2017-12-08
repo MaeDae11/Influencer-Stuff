@@ -24,8 +24,8 @@
     <div class="logo">
       <span>INFLUENCER STUFF</span>
     </div>
-    <!-- desktop / ipad navigation -->
-    <!-- Navigation bar  - sticks to top -->
+
+    <!-- ***** Large screen Navigation bar ***** -->
     <div class="navigation-buttons large-screen">
       <a href="#">Home</a>
       <a href="#About">About</a>
@@ -33,7 +33,7 @@
       <a href="#Clients">Clients</a>
       <a href="#Contact">Contact</a>
     </div>
-    <!-- mobile navigation -->
+    <!--  ***** mobile navigation ***** -->
     <!-- Navigation bar  - sticks to top -->
     <div class="mobile-screen">
       <div class="open-close-nav">
@@ -46,7 +46,7 @@
       </div>
     </div>
   </nav>
-  <!-- dropdown navigation controlled by jQuewry in main.js -->
+  <!-- dropdown navigation on mobile-->
   <div class="navigation-dropdown">
     <div><a href="#">Home</a></div>
     <div><a href="#About">About</a></div>
@@ -59,7 +59,7 @@
     <h2 class="influencer-title">INFLUENCER STUFF</h2>
   </header>
 
-  <!-- ids on containers are used for scrolling purposes only-->
+
   <main>
     
     <!--*************** ABOUT ME SECTION ***************-->
@@ -71,11 +71,7 @@
       <div class="about-me-information">
         <h3 class="about-me-title">What We Do</h3>
         <div class="about-me-paragraph">
-          <!-- <div class="about-me-image">
-            <!-- <img src="resources/images/richardlittlephoto-min.png" alt="founder Richard Little"> -->
-          <!-- </div> --> 
           <div class="about-column-one">
-
             <p>We here at InfluencerStuff bridge the gap between influencers and brands, developing partnerships that last longer and engage more with each and every audience member. Each influencer and brand is different so treating each campaign similarly does no good for anyone! Transparency is our goal and we will continue to work towards making this industry a fun and honest place to work in. 
             </p>
           </div>
@@ -84,7 +80,6 @@
     </section>
 
     <!-- ***************  SERVICES  *************** -->
-    <!-- section containing 3 general services offered -->
     <section id="Services" class="services-overall-container">
       <h3 class="services-title">Our Services</h3>
       <div class="services-only-container">
@@ -93,9 +88,6 @@
         <div class="first-set-services">
         <!-- **************** Networking *************** -->
         <div class="service service-networking" data-dialog="networking">
-          <!-- <div class="service-networking-icon icon">
-            <span class="service-icons"><i class="fa fa-connectdevelop fa-5x" aria-hidden="true"></i></span>
-          </div> -->
           <div class="service-networking-summary summary">
             <span class="hidden-network">Our network becomes yours</span>
             <h3 class="each-service-title">NETWORKING</h3>
@@ -125,9 +117,6 @@
         
         <!-- Sponsorship / Influencer Marketing-->
         <div class="service service-sponsorship" data-dialog="sponsorship">
-          <!-- <div class="service-sponsorship-icon icon">
-            <span class="service-icons"><i class="fa fa-users fa-5x" aria-hidden="true"></i></span>
-          </div> -->
           <div class="service-sponsorship-summary summary">
             <span class="hidden-sponsor">Pairing influencers and sponsors</span>
             <h3 class="each-service-title">INFULENCER MARKETING</h3>
@@ -161,9 +150,6 @@
 
       <!-- ****************** Management *************** -->
         <div class="service service-management" data-dialog="management">
-          <!-- <div class="service-management-icon icon">
-            <span class="service-icons"><i class="fa fa-5x fa-calendar" aria-hidden="true"></i></span>
-          </div> -->
           <div class="service-management-summary summary">
             <span class="hidden-management">Manage your time</span>              
             <h3 class="each-service-title">MANAGEMENT</h3>
@@ -192,10 +178,7 @@
         <div class="button-wrap hidden"><button data-dialog="management" class="trigger">Open Dialog</button></div>
 
         <!-- *************** COMING SOON ************** -->
-        <div class="service service-coming-soon" data-dialog="coming-soon">
-          <!-- <div class="service-coming-soon-icon icon">
-            <span class="service-icons"><i class="fa fa-users fa-5x" aria-hidden="true"></i></span>
-          </div> -->
+        <div class="service service-coming-soon" data-dialog="service-coming-soon">
           <div class="service-coming-soon-summary summary">
             <span class="hidden-coming-soon">Sign in features for additional management</span>
             <h3 class="each-service-title">COMING SOON</h3>
@@ -203,7 +186,7 @@
           </div>
         </div>
         <!-- coming-soon Modal -->
-        <div id="coming-soon" class="dialog dialog--close">
+        <div id="service-coming-soon" class="dialog dialog--close">
           <div class="dialog__overlay"></div>
           <div class="dialog__content">
             <div class="morph-shape">
@@ -219,7 +202,7 @@
           </div>
         </div>
         <!-- coming-soon - Not actual button that is pressed to bring up modal. MUST have button after section and hidden. Do not use the actual button to bring up modal, but still need it -->
-        <div class="button-wrap hidden"><button data-dialog="coming-soon" class="trigger">Open Dialog</button></div>
+        <div class="button-wrap hidden"><button data-dialog="service-coming-soon" class="trigger">Open Dialog</button></div>
       </div>
     </section>
 
