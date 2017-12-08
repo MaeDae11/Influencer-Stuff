@@ -307,7 +307,8 @@ html, body{
 @media screen and (min-width: 1200px) {
   /* *******  ABOUT ME  ********* */
   .about-me-information {
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
     font-size: 20px;
   }
 }
@@ -422,12 +423,11 @@ html, body{
   .service {
     display: flex;
     font-size: 18px;
+    height: 400px;
   }
   .services-only-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    
-    /* padding-bottom: 70px; */
   }
   .each-service-title {
     font-size: 23px;
